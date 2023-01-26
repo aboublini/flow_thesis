@@ -2,19 +2,27 @@ import './LoginComponentStyle.css';
 import './VideoStyle.css'
 import colourVideo from "../visual-material/LoginBackround.mp4";
 import Logo from '../visual-material/logo.png';
-//import {Link} from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+
 
 const LoginComponent = () => {
+
+    // Navigation handling (to homepage in our case)
+    const navigate = useNavigate();
+
     const handleLogin = user => {
 
         user.preventDefault();
 
         // Check if user info is correct
-        if (user.target.username.value === "aboublini" && user.target.password.value === "password") {
+        if (user.target.username.value === "aboublini" && user.target.password.value === "123") {
             alert("Successful login!");
             // Clear inputs
             user.target.username.value = "";
             user.target.password.value = "";
+
+            // Redirect to homepage
+            navigate("/home");
         } else {
             alert("The credentials you provided are invalid. Please try again.");
             // Clear inputs
@@ -23,24 +31,20 @@ const LoginComponent = () => {
         }
     }
 
+    // Function that "resets" password (ideally)
     const ResetPassword = () => {
         let message = prompt("Please enter your registered mail:", "yourmail@example.gr");
 
-        // If inserts a mail something and presses okay
+        // Check mail inserted
         if (message !== "" && message != null && message !== "yourmail@example.gr") {
-
             // If the provided email address is correct
             alert("An email has been sent to " + message + " with instructions on how to recover your password.");
-
         } else if (message == null) { // If user presses cancel
-
-            // Do nothing
-
+            // Do nothing basically
         } else {
             // If the provided email address is wrong
             alert("Please insert a valid email address or press Cancel.");
             ResetPassword();
-
         }
     }
 
@@ -52,13 +56,13 @@ const LoginComponent = () => {
             </video>
             <div className="content">
                 <form onSubmit={handleLogin}>
-                    <img src={Logo} className="img" alt=""/>
+                    <img className="login-logo" src={Logo} alt=""/>
                     <label>Username</label>
                     <input type="text" name="username" required/>
                     <label>Password</label>
                     <input type="password" name="password" required/>
                     <button className="btn">Login</button>
-                    <p>Forgot your password? <u onClick={ResetPassword}>Reset my password</u></p>
+                    <p>Forgot your password? <u onClick={ResetPassword}>Reset password</u></p>
                 </form>
             </div>
         </div>

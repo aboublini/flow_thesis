@@ -43,7 +43,7 @@ form input, textarea {
     color: #000;
 }
 
-img {
+.login-logo {
     max-width: 230px;
     margin-bottom: 2rem;
 }
