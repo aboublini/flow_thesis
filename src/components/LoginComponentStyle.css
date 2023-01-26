@@ -10,15 +10,24 @@ form {
     padding: 9rem;
     margin: auto;
     width: 30%;
-    background: rgba(255, 255, 255, .6);
+    background: rgba(255, 255, 255, .7);
     align-items: center;
     border-radius: 25px;
 }
 
-form label, p {
+form label {
     margin-bottom: .7rem;
     max-width: 600px;
     font-size: 1.1rem;
+}
+
+p {
+    margin-top: .7rem;
+    font-size: 0.9rem;
+}
+
+u {
+    cursor: pointer;
 }
 
 form input, textarea {
@@ -32,4 +41,9 @@ form input, textarea {
     outline: none;
     border-radius: 20px;
     color: #000;
+}
+
+img {
+    max-width: 230px;
+    margin-bottom: 2rem;
 }
