@@ -12,12 +12,16 @@
     grid-gap: 40px;
 }
 
+.footer-logo {
+    max-width: 220px;
+}
+
 .footer .left {
     height: 100%;
     max-width: 100%;
     display: flex;
     flex-direction: column;
-    padding: 1rem;
+    padding: 3rem;
 }
 
 .footer .right {
@@ -27,6 +31,7 @@
     flex-direction: column;
     padding: 1rem;
     margin: auto;
+
 }
 
 .footer h4 {

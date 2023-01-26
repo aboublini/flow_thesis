@@ -1,0 +1,28 @@
+.quotes {
+    width: 100%;
+    padding: 6rem 0;
+    background: rgba(255, 255, 255, .6);
+    text-align: center;
+}
+
+
+.quotes .quote-title {
+    font-size: 2rem;
+}
+
+.quotes .quote-text {
+    font-style: italic;
+    font-size: 3.5rem;
+}
+
+.quotes .quote-who {
+    font-style: italic;
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width: 640px) {
+    .quotes-container {
+        grid-template-columns: 1fr;
+    }
+
+}

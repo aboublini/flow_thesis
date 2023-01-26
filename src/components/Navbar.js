@@ -23,7 +23,7 @@ const Navbar = () => {
                     <Link to="">Manage Life</Link>
                 </li>
                 <li>
-                    <Link to="">Empower</Link>
+                    <Link to="">Notes</Link>
                 </li>
                 <li>
                     <Link to="">About Flow</Link>

@@ -16,7 +16,6 @@ const LoginComponent = () => {
 
         // Check if user info is correct
         if (user.target.username.value === "aboublini" && user.target.password.value === "123") {
-            alert("Successful login!");
             // Clear inputs
             user.target.username.value = "";
             user.target.password.value = "";
