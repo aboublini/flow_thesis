@@ -10,7 +10,7 @@
 }
 
 .header-bg {
-    background-color: #8f8f8f;
+    background: rgba(255, 255, 255, .5);
     transition: .5s;
 }
 
@@ -29,7 +29,7 @@
 
 .nav-menu li:hover {
     border-bottom: 2px solid #8F867E;
-    transition: .5s;
+
 }
 
 .nav-menu a {
