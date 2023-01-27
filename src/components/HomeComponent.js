@@ -3,7 +3,7 @@ import './HomeComponentStyle.css'
 import homeVideo from '../visual-material/HomeBackround.mp4';
 import Logo from "../visual-material/logo.png";
 
-const Video = () => {
+const HomeComponent = () => {
     return (
         <div className="container">
             <video autoPlay loop muted id="video">
@@ -19,4 +19,4 @@ const Video = () => {
     );
 };
 
-export default Video;
+export default HomeComponent;
