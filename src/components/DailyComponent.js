@@ -11,7 +11,7 @@ const DailyComponent = () => {
             <div className="daily-content">
                 <div className="daily-title">
                     <h1>What is your main goal for today?</h1>
-                    <p>Stress less. Organize more.</p>
+                    <p>Stress less. Organize more!</p>
                 </div>
             </div>
         </div>
