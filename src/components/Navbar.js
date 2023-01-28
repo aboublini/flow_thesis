@@ -39,10 +39,10 @@ const Navbar = () => {
                     <Link to="/notes">Notes</Link>
                 </li>
                 <li>
-                    <Link to="">About Flow</Link>
+                    <Link to="/about">About Flow</Link>
                 </li>
                 <li>
-                    <Link to="">Help</Link>
+                    <Link to="/help">Help</Link>
                 </li>
             </ul>
             <div className="hamburger" onClick={handleClick}>
