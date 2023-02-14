@@ -54,7 +54,7 @@ const LoginComponent = () => {
                 <source src={colourVideo} type="video/mp4"/>
             </video>
             <div className="content">
-                <form onSubmit={handleLogin}>
+                <form onSubmit={handleLogin} className="login-form">
                     <img className="login-logo" src={Logo} alt=""/>
                     <label>Username</label>
                     <input type="text" name="username" required/>

@@ -3,6 +3,7 @@ import './DailyComponentStyle.css'
 import dailyVideo from '../visual-material/DailyBackround.mp4';
 
 const DailyComponent = () => {
+    
     return (
         <div className="daily-container">
             <video autoPlay loop muted id="daily-video">

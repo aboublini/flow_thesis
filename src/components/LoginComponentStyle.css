@@ -4,7 +4,7 @@ label {
     color: #000;
 }
 
-form {
+.login-form {
     display: flex;
     flex-direction: column;
     padding: 9rem;
@@ -15,7 +15,7 @@ form {
     border-radius: 25px;
 }
 
-form label {
+.login-form label {
     margin-bottom: .7rem;
     max-width: 600px;
     font-size: 1.1rem;
@@ -30,7 +30,7 @@ u {
     cursor: pointer;
 }
 
-form input, textarea {
+.login-form input, textarea {
     max-width: 320px;
     margin-bottom: 2rem;
     padding: 0.6rem 1rem;

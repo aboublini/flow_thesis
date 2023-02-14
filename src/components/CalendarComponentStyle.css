@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+* {
+    font-family: 'Raleway', 'Nirmala UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif !important;
+}
+.css-hlj6pa-MuiDialogActions-root {
+    display: none !important;
+}
+
+.css-z3au5x-MuiButtonBase-root-MuiIconButton-root-MuiPickersToolbar-penIconButton {
+    display: none !important;
+}
+
+.css-1hbyad5-MuiTypography-root {
+    display: none !important;
+}
+.css-3jvy96-MuiTypography-root-MuiDatePickerToolbar-title {
+    font-size: 2.5rem !important;
+}
+
+.css-dplwbx-MuiPickersCalendarHeader-label {
+    font-size: 1.5rem !important;
+    margin-bottom: 2px !important;
+}
+
+.css-raiqh1-MuiTypography-root-MuiDayPicker-weekDayLabel{
+    font-size: 1rem !important;
+}
+
+.css-ghi3gg-MuiDayPicker-weekContainer {
+    margin: 2px 0 !important;
+}
+
+.css-bkrceb-MuiButtonBase-root-MuiPickersDay-root {
+    margin: 3px 3px !important;
+    font-size: 1rem !important;
+}
+
+/* Calendar background color */
+.css-xelq0e-MuiPickerStaticWrapper-content{
+    background-color: transparent !important;
+}
+
+.css-195y93z-MuiButtonBase-root-MuiPickersDay-root.Mui-selected {
+    background-color: #8F867E !important;
+    color: white !important;
+}
+
+.css-195y93z-MuiButtonBase-root-MuiPickersDay-root:not(.Mui-selected) {
+    border-color: #8F867E !important;
+}
+
+.css-bkrceb-MuiButtonBase-root-MuiPickersDay-root.Mui-selected {
+    background-color: #8F867E !important;
+}

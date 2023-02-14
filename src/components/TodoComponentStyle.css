@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+.out {
+    background: rgba(255, 255, 255, .8);
+}
+
+.outer-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 100%;
+}
+
+
+.left-content {
+    text-align: center;
+    margin: auto;
+    max-width: 800px;
+    background-color: rgba(255, 255, 255, .6);
+    border-radius: 20px;
+}
+
+.right-content {
+    width: 100%;
+    padding: 2rem 4rem;
+    max-width: 600px;
+    margin: auto;
+    background-color: rgba(255, 255, 255, .6);
+    border-radius: 20px;
+}
+
+
+.todo {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding: 9rem;
+    text-align: center;
+    margin: auto;
+    border-radius: 20px;
+}
+
+h1 {
+    margin: 32px 0;
+    font-size: 2.5rem;
+    font-weight: normal;
+}
+
+.complete {
+    text-decoration: line-through;
+}
+
+.todo-input {
+    max-width: 300px;
+    margin-bottom: 2rem;
+    margin-right: 1rem;
+    padding: 0.4rem 1rem;
+    font-size: 1.3rem;
+    font-family: 'Indie Flower', serif !important;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    color: #000;
+}
+
+.todo-button {
+    font-family: 'Raleway', 'Nirmala UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    padding: 3px 12px;
+    font-size: 1.5em;
+    background: #8F867E;
+    color: #fff;
+    border: 1px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.todo-row{
+    font-family: 'Indie Flower', serif !important;
+    font-size: 1.3em;
+}
+
+.todo-container {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.todo-button:hover {
+    background: rgba(255, 255, 255, .6);
+    color: #000;
+}
+
+.todo-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4px auto;
+    padding: 16px;
+    border-radius: 5px;
+    width: 90%;
+}
+
+.iconsContainer {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1140px) {
+    .out .outer-container {
+        grid-template-columns: 1fr;
+    }
+
+}
