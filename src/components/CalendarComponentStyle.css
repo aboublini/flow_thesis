@@ -12,6 +12,19 @@
     display: none !important;
 }
 
+.css-118r9cm-MuiSvgIcon-root-MuiPickersCalendarHeader-switchViewIcon {
+    display: none !important;
+}
+
+.css-12mkn7b-MuiButtonBase-root-MuiIconButton-root-MuiPickersCalendarHeader-switchViewButton {
+    display: none !important;
+}
+
+/* Month name and year*/
+.css-10fao8b-MuiPickersCalendarHeader-labelContainer {
+    pointer-events: none !important;
+}
+
 .css-1hbyad5-MuiTypography-root {
     display: none !important;
 }

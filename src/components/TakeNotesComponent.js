@@ -26,9 +26,9 @@ const TakeNotesComponent = () => {
     useEffect(() => {
         const savedNotes = JSON.parse(localStorage.getItem('react-notes-app-data'));
 
-        // if (savedNotes){
-        //     setNotes(savedNotes);
-        // }
+        if (savedNotes){
+            setNotes(savedNotes);
+        }
     },[])
 
     // Save notes to local storage
