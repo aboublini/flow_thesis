@@ -1,17 +1,17 @@
 import React from 'react';
 import './LifeComponentStyle.css'
-import lifeVideo from '../visual-material/LifeBackround.mp4';
+import lifeImage from '../visual-material/LifeBackround.jpg';
 
 const LifeComponent = () => {
     return (
         <div className="life-container">
-            <video autoPlay loop muted id="life-video">
-                <source src={lifeVideo} type="video/mp4"/>
-            </video>
+
+            <img src={lifeImage} id="life-image" alt="life-background"/>
+
             <div className="life-content">
                 <div className="life-title">
-                    <h1>Life is different with flow.</h1>
-                    <p>Manage your money. Manage your workout.</p>
+                    <h1>Flow's budget manager.</h1>
+                    <p>Simple, easy and responsible.</p>
                 </div>
             </div>
         </div>

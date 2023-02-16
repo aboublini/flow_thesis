@@ -1,10 +1,10 @@
-#life-video {
-    position: fixed;
-    width: 100%;
+#life-image {
+    width: 100% !important;
     height: 100%;
-    object-fit: cover;
     z-index: -1;
-    filter: brightness(.9);
+    object-fit: cover;
+    position: fixed;
+    filter: brightness(85%);
 }
 
 .life-container {
