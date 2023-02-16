@@ -11,7 +11,7 @@ const HomeComponent = () => {
             </video>
             <div className="content">
                 <div className="welcome">
-                    <img src={Logo} className="img" alt=""/>
+                    <img src={Logo} className="home-img" alt=""/>
                     <p>Your productivity app.</p>
                 </div>
             </div>
