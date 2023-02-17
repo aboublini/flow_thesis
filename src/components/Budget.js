@@ -1,10 +1,11 @@
 import React from 'react';
 
-const Budget = () => {
+const Budget = ({ budget }) => {
+
     return (
         <div className="alert alert-secondary">
             <span>Budget:</span>
-            <span>$2000</span>
+            <span>{budget}€</span>
         </div>
     );
 };

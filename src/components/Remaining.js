@@ -1,10 +1,10 @@
 import React from 'react';
 
-const Remaining = () => {
+const Remaining = ({ remain }) => {
     return (
         <div className="alert alert-success">
             <span>Remaining:</span>
-            <span>$1200</span>
+            <span>{remain}€</span>
         </div>
     );
 };

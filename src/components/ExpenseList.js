@@ -1,47 +1,16 @@
 import React from 'react';
 import ExpenseItem from "./ExpenseItem";
 
-const ExpenseList = () => {
-    const expenses = [
-        {
-            id: 123,
-            name: "Shopping",
-            cost: 50
-        },
-        {
-            id: 123,
-            name: "Shopping",
-            cost: 50
-        },
-        {
-            id: 123,
-            name: "Shopping",
-            cost: 50
-        },
-        {
-            id: 123,
-            name: "Shopping",
-            cost: 50
-        },
-        {
-            id: 123,
-            name: "Shopping",
-            cost: 50
-        },
-        {
-            id: 123,
-            name: "Shopping",
-            cost: 50
-        },
-    ];
-
+const ExpenseList = ({ expenses, handleDeleteExpense }) => {
     return (
         <ul className="list-group">
             {expenses.map(((expense) => (
                 <ExpenseItem
                     id={expense.id}
                     name={expense.name}
-                    cost={expense.cost}/>
+                    cost={expense.cost}
+                    handleDeleteExpense={handleDeleteExpense}
+                />
             ))) }
         </ul>
     );
