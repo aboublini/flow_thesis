@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 
 const AddExpense = ({ handleAddExpense }) => {
-    // Initial state for two textboxes
+    // Initial state for two text boxes
     const [name, setName] = useState("");
     const [cost, setCost] = useState("");
 
@@ -15,7 +15,8 @@ const AddExpense = ({ handleAddExpense }) => {
     }
 
     // Call addExpense function when user presses + button
-    const handleSaveClick = () => {
+    const handleSaveClick = (e) => {
+        e.preventDefault(); // prevent page from reloading
         handleAddExpense(name, cost);
         setName("");
         setCost("");
@@ -27,7 +28,7 @@ const AddExpense = ({ handleAddExpense }) => {
                 <br/>
                 <div className="col-sm">
                     <label for="name">Name: </label>
-                    <input required="required"
+                    <input
                            type="text"
                            className="form-control"
                            id="name"
@@ -39,7 +40,7 @@ const AddExpense = ({ handleAddExpense }) => {
                 <br/>
                 <div className="col-sm">
                     <label for="cost">  Cost:  </label>
-                    <input required="required"
+                    <input
                            type="text"
                            className="form-control"
                            id="cost"

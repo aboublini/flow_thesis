@@ -43,8 +43,15 @@ function TodoComponent() {
             completed: false,
             important: true
         }
-        const newTodos = [...todos, newTodo]; // new array with old notes and new note
-        setTodos(newTodos);
+
+        if (newTodo.text === "") {
+            alert("You can't add an empty to do!");
+        }
+        else {
+            const newTodos = [...todos, newTodo]; // new array with old notes and new note
+            setTodos(newTodos);
+        }
+
     };
 
     const removeTodo = (id) => {

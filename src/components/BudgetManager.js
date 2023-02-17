@@ -45,7 +45,7 @@ const BudgetManager = () => {
 
 
     // Function that adds a new expense to expenses list
-    const addExpense = (name, price, budget, total) => {
+    const addExpense = (name, price, remaining) => {
 
         const newExpense = {
             id: nanoid(),
@@ -53,11 +53,9 @@ const BudgetManager = () => {
             cost: price,
         }
 
-        if ( (budget - (Number(newExpense.cost) + total)) > 0 ) {
-            const newExpenses = [...expenses, newExpense];
-            setExpenses(newExpenses);
+        if ( name === "" || price === "" ) {
+            alert("Expense name or cost missing!");
         } else {
-
             const newExpenses = [...expenses, newExpense];
             setExpenses(newExpenses);
         }
