@@ -3,6 +3,7 @@ import Footer from "../components/Footer";
 import AboutComponent from "../components/AboutComponent";
 import Navbar from "../components/Navbar";
 import {ScrollToTop} from "../components/ScrollToTop";
+import AboutInfoComponent from "../components/AboutInfoComponent";
 
 const Notes = () => {
     ScrollToTop(0,0);
@@ -10,6 +11,7 @@ const Notes = () => {
         <div>
             <Navbar/>
             <AboutComponent/>
+            <AboutInfoComponent/>
             <Footer/>
         </div>
     );
