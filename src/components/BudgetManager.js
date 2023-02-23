@@ -64,11 +64,17 @@ const BudgetManager = () => {
 
     // Function that deletes an expense from the expenses list
     const deleteExpense = (id) => {
-        // Array with the rest of the notes
-        const newExpenses = expenses.filter((expense) => expense.id !== id);
 
-        // Update notes
-        setExpenses(newExpenses);
+        const text = "Are you sure that you want to delete this expense?";
+
+        if (window.confirm(text) === true) {
+            // Array with the rest of the notes
+            const newExpenses = expenses.filter((expense) => expense.id !== id);
+
+            // Update notes
+            setExpenses(newExpenses);
+        }
+
     }
 
 

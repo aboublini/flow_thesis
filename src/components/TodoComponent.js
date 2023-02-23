@@ -55,8 +55,13 @@ function TodoComponent() {
     };
 
     const removeTodo = (id) => {
-        const updatedTodos = [...todos].filter((todo) => todo.id !== id);
-        setTodos(updatedTodos);
+
+        const text = "Are you sure that you want to delete this to-do?";
+
+        if (window.confirm(text) === true) {
+            const updatedTodos = [...todos].filter((todo) => todo.id !== id);
+            setTodos(updatedTodos);
+        }
 
     };
 
