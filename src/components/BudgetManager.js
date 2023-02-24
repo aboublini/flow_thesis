@@ -6,6 +6,7 @@ import ExpenseTotal from "./ExpenseTotal";
 import ExpenseList from "./ExpenseList";
 import AddExpense from "./AddExpense";
 import {nanoid} from "nanoid";
+import Dialog from "./Dialog";
 
 const BudgetManager = () => {
     // Initial state for expenses
@@ -79,7 +80,7 @@ const BudgetManager = () => {
 
 
     // Initialize budget
-    let budget = 2500;
+    let budget = 3000;
 
     // Calculating total expenses
     let total = 0;
@@ -89,10 +90,10 @@ const BudgetManager = () => {
 
     let remain = budget - total;
 
-
     return (
         <div className="outer-dv">
             <br/><br/><br/><br/>
+
             <div className="budget-cont">
 
                 <div className="row-mt3">

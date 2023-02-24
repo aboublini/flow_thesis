@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Budget = ({ budget }) => {
+const Budget = ({ handleBudgetChange, budget }) => {
 
     return (
         <div className="alert alert-secondary">

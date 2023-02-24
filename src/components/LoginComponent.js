@@ -3,51 +3,39 @@ import './VideoStyle.css'
 import colourVideo from "../visual-material/LoginBackround.mp4";
 import Logo from '../visual-material/logo.png';
 import { useNavigate } from "react-router-dom";
-
+import { useState } from 'react';
 
 const LoginComponent = () => {
-
-    // Navigation handling (to homepage in our case)
     const navigate = useNavigate();
+    const [username, setUsername] = useState('');
+    const [password, setPassword] = useState('');
 
-    const handleLogin = user => {
-
-        user.preventDefault();
-
-        // Check if user info is correct
-        if (user.target.username.value === "aboublini" && user.target.password.value === "123") {
-            // Clear inputs
-            user.target.username.value = "";
-            user.target.password.value = "";
-
-            // Redirect to homepage
+    const handleLogin = e => {
+        e.preventDefault();
+        if (username === "aboublini" && password === "123") {
+            setUsername('');
+            setPassword('');
             navigate("/home");
         } else {
             alert("The credentials you provided are invalid. Please try again.");
-            // Clear inputs
-            user.target.username.value = "";
-            user.target.password.value = "";
+            setUsername('');
+            setPassword('');
         }
     }
 
-    // Function that "resets" password (ideally)
     const ResetPassword = () => {
         let message = prompt("Please enter your registered mail:", "yourmail@example.gr");
 
-        // Check mail inserted
         if (message !== "" && message != null && message !== "yourmail@example.gr") {
-            // If the provided email address is correct
             alert("An email has been sent to " + message + " with instructions on how to recover your password.");
-        } else if (message == null) { // If user presses cancel
+        } else if (message == null) {
             // Do nothing basically
         } else {
-            // If the provided email address is wrong
             alert("Please insert a valid email address or press Cancel.");
             ResetPassword();
         }
     }
 
-    // Render the login form
     return (
         <div className="hero">
             <video autoPlay loop muted id="video">
@@ -57,16 +45,15 @@ const LoginComponent = () => {
                 <form onSubmit={handleLogin} className="login-form">
                     <img className="login-logo" src={Logo} alt=""/>
                     <label>Username</label>
-                    <input type="text" name="username" required/>
+                    <input type="text" name="username" value={username} onChange={e => setUsername(e.target.value)} required/>
                     <label>Password</label>
-                    <input type="password" name="password" required/>
+                    <input type="password" name="password" value={password} onChange={e => setPassword(e.target.value)} required/>
                     <button className="btn">Login</button>
                     <p>Forgot your password? <u onClick={ResetPassword}>Reset password</u></p>
                 </form>
             </div>
         </div>
     );
-
 }
 
 export default LoginComponent;
