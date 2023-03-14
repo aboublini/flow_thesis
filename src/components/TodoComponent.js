@@ -76,6 +76,7 @@ function TodoComponent() {
     }
 
     let sortedTodos = todos.sort((a, b) => b.important - a.important)
+
     return (
         <div className="out">
             <br/><br/><br/><br/>

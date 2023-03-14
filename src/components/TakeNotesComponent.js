@@ -60,6 +60,7 @@ const TakeNotesComponent = () => {
             // Update notes
             setNotes(newNotes);
         }
+
     }
 
     return (

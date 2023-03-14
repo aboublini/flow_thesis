@@ -6,7 +6,20 @@ import ExpenseTotal from "./ExpenseTotal";
 import ExpenseList from "./ExpenseList";
 import AddExpense from "./AddExpense";
 import {nanoid} from "nanoid";
-import Dialog from "./Dialog";
+import { Doughnut, Pie } from 'react-chartjs-2';
+
+import {
+    Chart as ChartJS,
+    ArcElement,
+    Tooltip,
+    Legend
+} from "chart.js";
+
+ChartJS.register(
+    ArcElement,
+    Tooltip,
+    Legend
+);
 
 const BudgetManager = () => {
     // Initial state for expenses
@@ -90,6 +103,30 @@ const BudgetManager = () => {
 
     let remain = budget - total;
 
+
+    // Chart handling
+    const doghnutData = {
+        labels: ["Spent", "Remaining"],
+        datasets: [{
+            label: "€",
+            data: [total, remain],
+            backgroundColor: ["grey", "purple"],
+            borderColor: ["grey", "purple"],
+        }]
+    }
+
+    const pieData = {
+        labels: ["Spent", "Remaining"],
+        datasets: [{
+            label: "€",
+            data: [15, 30, 50, 12],
+            backgroundColor: ["#8F867E", "purple"],
+            borderColor: ["#8F867E", "purple"],
+        }]
+    }
+
+    const options = { responsive: true};
+
     return (
         <div className="outer-dv">
             <br/><br/><br/><br/>
@@ -134,6 +171,21 @@ const BudgetManager = () => {
                             />
                         </div>
                     </div>
+                </div>
+            </div>
+            <br/>
+            <div className="chart-cont">
+                <div className="left-chart">
+                    <Doughnut
+                        data={doghnutData}
+                        options={options}
+                    ></Doughnut>
+                </div>
+                <div className="right-chart">
+                    <Pie
+                        data={pieData}
+                        options={options}
+                    ></Pie>
                 </div>
 
             </div>
