@@ -6,20 +6,32 @@ import ExpenseTotal from "./ExpenseTotal";
 import ExpenseList from "./ExpenseList";
 import AddExpense from "./AddExpense";
 import {nanoid} from "nanoid";
-import { Doughnut, Pie } from 'react-chartjs-2';
+import { Doughnut, Line } from 'react-chartjs-2';
 
 import {
     Chart as ChartJS,
     ArcElement,
     Tooltip,
-    Legend
+    Legend,
+    CategoryScale,
+    LinearScale,
+    PointElement,
+    LineElement,
+    Title,
 } from "chart.js";
 
 ChartJS.register(
     ArcElement,
     Tooltip,
+    CategoryScale,
+    LinearScale,
+    PointElement,
+    LineElement,
+    Title,
+    Tooltip,
     Legend
 );
+
 
 const BudgetManager = () => {
     // Initial state for expenses
@@ -110,22 +122,35 @@ const BudgetManager = () => {
         datasets: [{
             label: "€",
             data: [total, remain],
-            backgroundColor: ["grey", "purple"],
-            borderColor: ["grey", "purple"],
+            backgroundColor: ["#8F867E", "rgba(143, 134, 126, .3)"],
+            borderColor: ["#8F867E", "white"],
         }]
     }
 
-    const pieData = {
-        labels: ["Spent", "Remaining"],
+    const lineChartData = {
+        labels: expenses.map(obj => obj.name),
         datasets: [{
-            label: "€",
-            data: [15, 30, 50, 12],
-            backgroundColor: ["#8F867E", "purple"],
-            borderColor: ["#8F867E", "purple"],
+            label: 'Expenses Flow',
+            data: expenses.map(obj => obj.cost),
+            fill: false,
+            borderColor: '#8F867E',
+            tension: 0.1
         }]
-    }
+    };
 
-    const options = { responsive: true};
+    const options = {
+        responsive: true,
+        plugins: {
+            legend: {
+                labels: {
+                    font: {
+                        family: "Raleway"
+                    }
+                }
+            }
+        }
+    };
+
 
     return (
         <div className="outer-dv">
@@ -176,16 +201,21 @@ const BudgetManager = () => {
             <br/>
             <div className="chart-cont">
                 <div className="left-chart">
-                    <Doughnut
-                        data={doghnutData}
-                        options={options}
-                    ></Doughnut>
+                    <div className="chart-cont">
+                        <Doughnut
+                            data={doghnutData}
+                            options={options}
+                        ></Doughnut>
+                    </div>
                 </div>
                 <div className="right-chart">
-                    <Pie
-                        data={pieData}
-                        options={options}
-                    ></Pie>
+                    <div className="chart-cont">
+                            <Line
+                                data={lineChartData}
+                                options={options}
+                            ></Line>
+                    </div>
+
                 </div>
 
             </div>
