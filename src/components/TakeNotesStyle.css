@@ -16,7 +16,7 @@
     background-color: #fff;
     border-radius: 10px;
     padding: 1rem;
-    min-height: 270px;
+    min-height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -45,6 +45,8 @@
     resize: none;
     background-color: rgba(255, 255, 255, .8) ;
     font-family: 'Indie Flower', serif !important;
+    margin-bottom: 0.2rem;
+    padding: 0 0.8rem;
 }
 
 .saved-txt {
