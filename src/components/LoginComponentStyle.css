@@ -7,9 +7,9 @@ label {
 .login-form {
     display: flex;
     flex-direction: column;
-    padding: 9rem;
+    padding: 7rem;
     margin: auto;
-    width: 30%;
+    width: 25%;
     background: rgba(255, 255, 255, .7);
     align-items: center;
     border-radius: 25px;
