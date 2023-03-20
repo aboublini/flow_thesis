@@ -27,6 +27,10 @@
     border-radius: 10px;
 }
 
+.item:hover {
+    background: rgba(255, 255, 255, .5);
+}
+
 .title {
     display: flex;
     justify-content: space-between;
@@ -36,7 +40,7 @@
 
 .title h2 {
     font-weight: lighter;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
 }
 
 .title span {
@@ -56,4 +60,19 @@
     height: auto;
     max-height: 9999px;
     transition: all 0.4s cubic-bezier(1,0,1,0);
+}
+
+ol {
+    white-space: pre-wrap;
+    list-style-type: none;
+    padding: 15px;
+}
+
+.lnk {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.plus {
+    font-size: 1rem;
 }

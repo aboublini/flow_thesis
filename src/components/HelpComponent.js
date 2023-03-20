@@ -1,8 +1,11 @@
 import React from 'react';
 import './HelpComponentStyle.css'
 import helpVideo from '../visual-material/HelpBackround.mp4';
+import manual from '../visual-material/UserManual.pdf';
+
 
 const HelpComponent = () => {
+
     return (
         <div className="help-container">
             <video autoPlay loop muted id="help-video">
@@ -13,7 +16,11 @@ const HelpComponent = () => {
                     <h1>Having trouble with flow?</h1>
                     <p>We've got you covered. Download our user manual.</p>
                     <br/><br/>
-                    <button className="btn">Download User Manual</button>
+
+                    <a href={manual} target="_blank"
+                       rel="noreferrer">
+                        <button className="btn-help">Download User Manual</button>
+                    </a>
                 </div>
             </div>
         </div>
