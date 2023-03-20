@@ -11,7 +11,9 @@ const HelpComponent = () => {
             <div className="help-content">
                 <div className="help-title">
                     <h1>Having trouble with flow?</h1>
-                    <p>We've got you covered.</p>
+                    <p>We've got you covered. Download our user manual.</p>
+                    <br/><br/>
+                    <button className="btn">Download User Manual</button>
                 </div>
             </div>
         </div>
