@@ -85,7 +85,7 @@
 .remove-container {
     background: rgba(255, 255, 255, .8);
     border-radius: 20px;
-    max-width: 450px;
+    max-width: 400px;
     padding-top: 1rem;
     padding-bottom: 2rem;
 }
@@ -116,7 +116,7 @@
 .reset-container-ok {
     background: rgba(255, 255, 255, .8);
     border-radius: 20px;
-    max-width: 450px;
+    max-width: 400px;
     padding-top: 1rem;
     padding-bottom: 2rem;
 }

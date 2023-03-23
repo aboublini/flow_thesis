@@ -74,16 +74,6 @@ const TakeNotesComponent = () => {
             }
         });
 
-        // const text = "Are you sure that you want to delete this note?";
-        //
-        // if (window.confirm(text) === true) {
-        //     // Array with the rest of the notes
-        //     const newNotes = notes.filter((note) => note.id !== id);
-        //
-        //     // Update notes
-        //     setNotes(newNotes);
-        // }
-
     }
 
     return (

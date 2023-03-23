@@ -9,7 +9,8 @@ label {
     flex-direction: column;
     padding: 7rem;
     margin: auto;
-    width: 25%;
+    width: 450px;
+    height: 700px;
     background: rgba(255, 255, 255, .7);
     align-items: center;
     border-radius: 25px;
@@ -41,6 +42,7 @@ u {
     outline: none;
     border-radius: 20px;
     color: #000;
+    min-width: 300px;
 }
 
 .login-logo {
