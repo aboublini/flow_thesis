@@ -61,7 +61,7 @@
 
 
 /*LOGIN ALERT STYLING*/
-.reset-title {
+.reset-title, .remove-title {
     font-size: 1.2rem;
     font-weight: lighter;
 }
@@ -81,7 +81,8 @@
     margin-right: auto;
 }
 
-.reset-container {
+.reset-container,
+.remove-container {
     background: rgba(255, 255, 255, .8);
     border-radius: 20px;
     max-width: 450px;
@@ -89,23 +90,26 @@
     padding-bottom: 2rem;
 }
 
-.reset-container .reset-confirm{
+.reset-container .reset-confirm,
+.remove-container .remove-confirm{
     background-color: rgba(143, 134, 126, .9);
     border-radius: 20px;
     width: 90px;
 }
 
-.reset-container .reset-confirm:hover {
+.reset-container .reset-confirm:hover,
+.remove-container .remove-confirm:hover {
     background-color: rgba(143, 134, 126, .5);
 }
 
-.reset-container .reset-cancel{
+.reset-container .reset-cancel, .remove-container .remove-cancel{
     background-color: rgba(143, 134, 126, .9);
     border-radius: 20px;
     width: 90px;
 }
 
-.reset-container .reset-cancel:hover {
+.reset-container .reset-cancel:hover,
+.remove-container .remove-cancel:hover {
     background-color: rgba(143, 134, 126, .5);
 }
 
@@ -127,4 +131,3 @@
     border-radius: 20px;
     width: 90px;
 }
-

@@ -4,6 +4,7 @@ import TodoForm from "./TodoForm";
 import TodoItem from "./TodoItem";
 import CalendarComponent from "./CalendarComponent";
 import {nanoid} from "nanoid";
+import Swal from "sweetalert2";
 
 function TodoComponent() {
     const [todos, setTodos] = useState([
@@ -45,7 +46,14 @@ function TodoComponent() {
         }
 
         if (newTodo.text === "") {
-            alert("You can't add an empty to do!");
+            Swal.fire(
+                {customClass:{
+                        popup: 'reset-container-ok',
+                        title: 'reset-title-ok',
+                        confirmButton: 'reset-ok'
+                    },
+                    title: "You can't add an empty to do!"
+                });
         }
         else {
             const newTodos = [...todos, newTodo]; // new array with old notes and new note
@@ -55,13 +63,24 @@ function TodoComponent() {
     };
 
     const removeTodo = (id) => {
-
-        const text = "Are you sure that you want to delete this to-do?";
-
-        if (window.confirm(text) === true) {
-            const updatedTodos = [...todos].filter((todo) => todo.id !== id);
-            setTodos(updatedTodos);
-        }
+        Swal.fire({
+            customClass: {
+                popup: 'remove-container',
+                title: 'remove-title',
+                confirmButton: 'remove-confirm',
+                cancelButton: 'remove-cancel',
+            },
+            title: 'Are you sure that you want to delete this to-do?',
+            showCancelButton: true,
+            confirmButtonText: 'Yes',
+            cancelButtonText: 'No',
+            showLoaderOnConfirm: true}
+        ).then((result) => {
+            if (result.isConfirmed) {
+                    const updatedTodos = [...todos].filter((todo) => todo.id !== id);
+                    setTodos(updatedTodos);
+            }
+        });
 
     };
 

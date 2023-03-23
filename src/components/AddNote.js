@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import Swal from "sweetalert2";
 
 const AddNote = ({ handleAddNote }) => {
     const [noteText, setNoteText] = useState("");
@@ -16,7 +17,15 @@ const AddNote = ({ handleAddNote }) => {
             handleAddNote(noteText);
             setNoteText(""); // Empty note text
         } else {
-            alert("You can't add an empty note!"); // Alert user with error message
+            //alert("You can't add an empty note!"); // Alert user with error message
+            Swal.fire(
+                {customClass:{
+                        popup: 'reset-container-ok',
+                        title: 'reset-title-ok',
+                        confirmButton: 'reset-ok'
+                    },
+                    title: "You can't add an empty note!"
+                });
         }
     }
 

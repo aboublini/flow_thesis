@@ -19,6 +19,7 @@ import {
     LineElement,
     Title,
 } from "chart.js";
+import Swal from "sweetalert2";
 
 ChartJS.register(
     ArcElement,
@@ -80,7 +81,15 @@ const BudgetManager = () => {
         }
 
         if ( name === "" || price === "" ) {
-            alert("Expense name or cost missing!");
+            // alert("Expense name or cost missing!");
+            Swal.fire(
+                {customClass:{
+                        popup: 'reset-container-ok',
+                        title: 'reset-title-ok',
+                        confirmButton: 'reset-ok'
+                    },
+                    title: "Expense name or cost missing!"
+                });
         } else {
             const newExpenses = [...expenses, newExpense];
             setExpenses(newExpenses);
@@ -90,16 +99,39 @@ const BudgetManager = () => {
 
     // Function that deletes an expense from the expenses list
     const deleteExpense = (id) => {
+        Swal.fire({
+            customClass: {
+                popup: 'remove-container',
+                title: 'remove-title',
+                confirmButton: 'remove-confirm',
+                cancelButton: 'remove-cancel',
+            },
+            title: 'Are you sure that you want to delete this to-do?',
+            showCancelButton: true,
+            confirmButtonText: 'Yes',
+            cancelButtonText: 'No',
+            showLoaderOnConfirm: true}
+        ).then((result) => {
+            if (result.isConfirmed) {
+                    // Array with the rest of the notes
+                    const newExpenses = expenses.filter((expense) => expense.id !== id);
 
-        const text = "Are you sure that you want to delete this expense?";
+                    // Update notes
+                    setExpenses(newExpenses);
+            }
+        });
 
-        if (window.confirm(text) === true) {
-            // Array with the rest of the notes
-            const newExpenses = expenses.filter((expense) => expense.id !== id);
 
-            // Update notes
-            setExpenses(newExpenses);
-        }
+
+        // const text = "Are you sure that you want to delete this expense?";
+        //
+        // if (window.confirm(text) === true) {
+        //     // Array with the rest of the notes
+        //     const newExpenses = expenses.filter((expense) => expense.id !== id);
+        //
+        //     // Update notes
+        //     setExpenses(newExpenses);
+        // }
 
     }
 
