@@ -33,7 +33,7 @@
 }
 
 .container p {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     font-weight: 200;
     color: #000;
 }
@@ -43,13 +43,13 @@
     margin-bottom: 1rem;
 }
 
-@media screen and (max-width: 640px) {
-    .content h1 {
-        font-size: 3rem;
-    }
+/*@media screen and (max-width: 640px) {*/
+/*    .content h1 {*/
+/*        font-size: 3rem;*/
+/*    }*/
 
-    .content p {
-        font-size: 1.4rem;
-        margin-bottom: 1.6rem;
-    }
-}
+/*    .content p {*/
+/*        font-size: 1.4rem;*/
+/*        margin-bottom: 1.6rem;*/
+/*    }*/
+/*}*/

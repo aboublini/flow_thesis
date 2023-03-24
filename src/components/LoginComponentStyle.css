@@ -7,10 +7,10 @@ label {
 .login-form {
     display: flex;
     flex-direction: column;
-    padding: 7rem;
+    padding: 4rem;
     margin: auto;
-    width: 450px;
-    height: 700px;
+    width: 400px;
+    height: 580px;
     background: rgba(255, 255, 255, .7);
     align-items: center;
     border-radius: 25px;
@@ -19,7 +19,7 @@ label {
 .login-form label {
     margin-bottom: .7rem;
     max-width: 600px;
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 p {
@@ -32,20 +32,25 @@ u {
 }
 
 .login-form input, textarea {
-    max-width: 320px;
     margin-bottom: 2rem;
     padding: 0.6rem 1rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-family: 'Raleway', 'Nirmala UI', serif;
     background-color: #fff;
     border: none;
     outline: none;
     border-radius: 20px;
     color: #000;
-    min-width: 300px;
+    min-width: 200px;
 }
 
 .login-logo {
     max-width: 230px;
     margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 640px) {
+    .login-form {
+
+    }
 }

@@ -8,7 +8,7 @@
 }
 
 .life-container {
-    height: 50vh;
+    height: 70vh;
     width: 100%;
     position: relative;
     object-fit: contain;
@@ -131,3 +131,4 @@
     border-radius: 20px;
     width: 90px;
 }
+
