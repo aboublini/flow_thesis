@@ -112,18 +112,19 @@
     margin: 0;
 }
 
-/*.dropdown:hover .dropbtn {*/
-/*    background-color: red;*/
-/*}*/
+.dropbtn:hover {
+    cursor: pointer;
+}
 
 .dropdown-content {
     display: none;
     position: absolute;
-    right: 3px;
-    top: 63px;
+    right: 6px;
+    top: 62px;
     background-color: rgba(255, 255, 255, .6);
     min-width: 30px;
     z-index: 1;
+    transition: 0.3s;
 }
 
 .dropdown-content a {

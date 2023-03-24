@@ -3,10 +3,24 @@ import './VideoStyle.css'
 import colourVideo from "../visual-material/LoginBackround.mp4";
 import Logo from '../visual-material/logo.png';
 import { useNavigate } from "react-router-dom";
-import { useState } from 'react';
+import {useEffect, useState} from 'react';
 import Swal from "sweetalert2";
 
 const LoginComponent = () => {
+
+    useEffect(() => {
+        window.history.pushState(null, null, window.location.pathname);
+        window.addEventListener("popstate", onPopState);
+        return () => {
+            window.removeEventListener("popstate", onPopState);
+        };
+    }, []);
+
+    function onPopState(event) {
+        event.preventDefault();
+        window.history.pushState(null, null, window.location.pathname);
+    }
+
     const navigate = useNavigate();
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
@@ -18,7 +32,14 @@ const LoginComponent = () => {
             setPassword('');
             navigate("/home");
         } else {
-            alert("The credentials you provided are invalid. Please try again.");
+            Swal.fire(
+                {customClass:{
+                        popup: 'reset-container-ok',
+                        title: 'reset-title-ok',
+                        confirmButton: 'reset-ok'
+                    },
+                    title: "The credentials you provided are invalid."
+                });
             setUsername('');
             setPassword('');
         }

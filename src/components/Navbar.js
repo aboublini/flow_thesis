@@ -39,7 +39,7 @@ const Navbar = () => {
                     <Link to="/notes">Notes</Link>
                 </li>
                 <li className="dropdown">
-                    <button className="dropbtn">Help</button>
+                    <button className="dropbtn">More</button>
                     <div className="dropdown-content">
                         <Link to="/help">FAQs</Link>
                         <Link to="/about">About Flow</Link>
