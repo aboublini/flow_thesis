@@ -38,11 +38,22 @@ const Navbar = () => {
                 <li>
                     <Link to="/notes">Notes</Link>
                 </li>
-                <li>
+                <li className="dropdown">
+                    <button className="dropbtn">Help</button>
+                    <div className="dropdown-content">
+                        <Link to="/help">FAQs</Link>
+                        <Link to="/about">About Flow</Link>
+                        <Link to="/">Logout</Link>
+                    </div>
+                </li>
+                <li className="burger">
+                    <Link to="/help">FAQs</Link>
+                </li>
+                <li className="burger">
                     <Link to="/about">About Flow</Link>
                 </li>
-                <li>
-                    <Link to="/help">Help</Link>
+                <li className="burger">
+                    <Link to="/">Logout</Link>
                 </li>
             </ul>
             <div className="hamburger" onClick={handleClick}>
