@@ -2,6 +2,7 @@ import React from 'react';
 import './QuotesComponentStyle.css'
 
 const QuotesComponent = () => {
+    // Quotes that will be appearing
     const quotes = [
         {
             id: 1,
@@ -35,6 +36,7 @@ const QuotesComponent = () => {
         },
     ];
 
+    // Render quotes randomly
     const randomNum = Math.floor(Math.random() * 6) + 1;
     let quoteText;
     let quoteWriter;

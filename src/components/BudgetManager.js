@@ -81,7 +81,7 @@ const BudgetManager = () => {
         }
 
         if ( name === "" || price === "" ) {
-            // alert("Expense name or cost missing!");
+            // Prevent user from adding an expense with (name or cost) attributes missing
             Swal.fire(
                 {customClass:{
                         popup: 'reset-container-ok',
@@ -99,6 +99,8 @@ const BudgetManager = () => {
 
     // Function that deletes an expense from the expenses list
     const deleteExpense = (id) => {
+
+        // Confirmation message on note deletion
         Swal.fire({
             customClass: {
                 popup: 'remove-container',
@@ -133,6 +135,7 @@ const BudgetManager = () => {
         total = total + Number(element.cost);
     }
 
+    // Calculate remaining money
     let remain = budget - total;
 
 

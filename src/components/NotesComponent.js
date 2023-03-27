@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import './NotesComponentStyle.css'
 import notesImage from '../visual-material/NotesBackround.jpg';
 

@@ -1,4 +1,4 @@
-import {Routes, Route, ScrollRestoration, BrowserRouter} from 'react-router-dom';
+import {Routes, Route} from 'react-router-dom';
 import Login from "./routes/Login";
 import Home from "./routes/Home";
 import Life from "./routes/Life";

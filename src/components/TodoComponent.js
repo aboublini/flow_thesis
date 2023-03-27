@@ -7,6 +7,8 @@ import {nanoid} from "nanoid";
 import Swal from "sweetalert2";
 
 function TodoComponent() {
+
+    // To do list initial state
     const [todos, setTodos] = useState([
         {
             id: nanoid(),
@@ -22,6 +24,7 @@ function TodoComponent() {
         },
     ]);
 
+    // Retrieve to do list when page loads
     useEffect(() => {
         const savedTodos = JSON.parse(localStorage.getItem('react-todo-app-data'));
 
@@ -37,6 +40,7 @@ function TodoComponent() {
             JSON.stringify(todos))
     }, [todos]);
 
+    // Add to do function
     const addTodo = (text) => {
         const newTodo = {
             id: nanoid(),
@@ -56,12 +60,13 @@ function TodoComponent() {
                 });
         }
         else {
-            const newTodos = [...todos, newTodo]; // new array with old notes and new note
+            const newTodos = [...todos, newTodo]; // new array with old to-dos and new to-do
             setTodos(newTodos);
         }
 
     };
 
+    // Delete to do function
     const removeTodo = (id) => {
         Swal.fire({
             customClass: {
@@ -84,6 +89,7 @@ function TodoComponent() {
 
     };
 
+    // Mark a to-do as done function
     const completeTodo = (id) => {
         let updatedTodos = todos.map((todo) => {
             if(todo.id === id) {
@@ -94,6 +100,7 @@ function TodoComponent() {
         setTodos(updatedTodos)
     }
 
+    // Important to dos are the to-dos that the user adds
     let sortedTodos = todos.sort((a, b) => b.important - a.important)
 
 

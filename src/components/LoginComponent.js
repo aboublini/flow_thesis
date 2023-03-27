@@ -8,6 +8,7 @@ import Swal from "sweetalert2";
 
 const LoginComponent = () => {
 
+    // User can't press browser's back button for security reasons
     useEffect(() => {
         window.history.pushState(null, null, window.location.pathname);
         window.addEventListener("popstate", onPopState);
@@ -25,6 +26,7 @@ const LoginComponent = () => {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
 
+    // Handle login with credentials
     const handleLogin = e => {
         e.preventDefault();
         if (username === "aboublini" && password === "123") {
@@ -45,8 +47,9 @@ const LoginComponent = () => {
         }
     }
 
+    // Reset password function (doesn't actually reset password, but it seems that it does)
     const ResetPassword = () => {
-        //let message = prompt("Please enter your registered mail:", "yourmail@example.gr");
+        // Message for reset password
         Swal.fire({
             customClass: {
                 popup: 'reset-container',
@@ -65,6 +68,7 @@ const LoginComponent = () => {
             confirmButtonText: 'Reset',
             showLoaderOnConfirm: true}
         ).then((result) => {
+            // If user actually writes something in input
             if (result.value !== "" && result.value != null && result.value !== "yourmail@example.gr") {
                 Swal.fire(
                     {customClass:{
@@ -74,9 +78,9 @@ const LoginComponent = () => {
                         },
                         title: "An email has been sent to " + result.value + " with instructions on how to recover your password."
                     });
-            } else if (result.isDismissed){
+            } else if (result.isDismissed){ // If user presses cancel
                 // Do nothing
-            } else {
+            } else { // In any other case
                 Swal.fire(
                     {customClass:{
                             popup: 'reset-container-ok',
@@ -87,16 +91,6 @@ const LoginComponent = () => {
                     });
             }
         });
-
-        // if (message !== "" && message != null && message !== "yourmail@example.gr") {
-        //     alert("An email has been sent to " + message + " with instructions on how to recover your password.");
-        //
-        // } else if (message == null) {
-        //     // Do nothing basically
-        // } else {
-        //     alert("Please insert a valid email address or press Cancel.");
-        //     ResetPassword();
-        // }
     }
 
     return (

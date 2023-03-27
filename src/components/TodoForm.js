@@ -4,6 +4,7 @@ import React, { useState } from "react";
 export default function TodoForm(props) {
     const [input, setInput] = useState("");
 
+    // Call add to-do function on form submission
     const handleSubmit = (e) => {
         e.preventDefault()
         props.addTodo(input)

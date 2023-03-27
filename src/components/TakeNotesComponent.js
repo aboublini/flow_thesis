@@ -5,6 +5,8 @@ import {nanoid} from "nanoid";
 import Swal from "sweetalert2";
 
 const TakeNotesComponent = () => {
+
+    // Notes initial state
     const [notes, setNotes] = useState([
         {
             id: nanoid(),
@@ -39,6 +41,7 @@ const TakeNotesComponent = () => {
             JSON.stringify(notes))
     }, [notes]);
 
+    // Add note function
     const addNote = (text) => {
         const date = new Date();
         const newNote = {
@@ -50,8 +53,9 @@ const TakeNotesComponent = () => {
         setNotes(newNotes);
     }
 
+    // Delete note function
     const deleteNote = (id) => {
-
+        // Confirm on note deletion
         Swal.fire({
             customClass: {
                 popup: 'remove-container',

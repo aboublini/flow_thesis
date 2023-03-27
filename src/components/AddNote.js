@@ -5,7 +5,7 @@ const AddNote = ({ handleAddNote }) => {
     const [noteText, setNoteText] = useState("");
     const characterLimit = 200;
 
-    const handleChange = (event) => { // event is what the user has typed
+    const handleChange = (event) => { // event is what the user has typed (the note)
         if (characterLimit - event.target.value.length >= 0) { // Handle character limit (user can't type more than the limit number)
             setNoteText(event.target.value);
         }
@@ -17,7 +17,7 @@ const AddNote = ({ handleAddNote }) => {
             handleAddNote(noteText);
             setNoteText(""); // Empty note text
         } else {
-            //alert("You can't add an empty note!"); // Alert user with error message
+            // Prevent user from adding an empty note to notes list
             Swal.fire(
                 {customClass:{
                         popup: 'reset-container-ok',
