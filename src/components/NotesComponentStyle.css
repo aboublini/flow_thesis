@@ -31,6 +31,7 @@
 .notes-container .notes-content h1 {
     font-size: 4rem;
     color: #000;
+    transition: .3s;
 }
 
 .notes-container p {
@@ -44,14 +45,22 @@
     margin-bottom: 1rem;
 }
 
-@media screen and (max-width: 640px) {
-    .notes-content h1 {
-        font-size: 3rem;
+/*@media screen and (max-width: 640px) {*/
+/*    .notes-content h1 {*/
+/*        font-size: 3rem;*/
+/*    }*/
+
+/*    .notes-content p {*/
+/*        font-size: 1.4rem;*/
+/*        margin-bottom: 1.6rem;*/
+/*    }*/
+/*}*/
+
+
+@media screen and (max-width: 1240px) {
+    .notes-title h1 {
+        font-size: 3.2rem !important;
+        transition: .3s;
     }
 
-    .notes-content p {
-        font-size: 1.4rem;
-        margin-bottom: 1.6rem;
-    }
 }
-

@@ -52,6 +52,11 @@
     cursor: pointer;
 }
 
+.delete-icon:hover {
+    color: #8F867E;
+    transition: .2s;
+}
+
 .this-month {
     margin-top: auto;
     margin-bottom: auto;
