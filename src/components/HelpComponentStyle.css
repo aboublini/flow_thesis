@@ -31,12 +31,15 @@
 .help-container .help-content h1 {
     font-size: 4rem;
     color: #000;
+    transition: .2s;
+
 }
 
 .help-container p {
     font-size: 1.6rem;
     font-weight: 200;
     color: #000;
+    transition: .2s;
 }
 
 .help-img {
@@ -55,20 +58,34 @@
     border: 1px;
     cursor: pointer;
     border-radius: 30px;
+    transition: .2s;
+
 }
 
 .btn-help:hover {
     background: rgba(255, 255, 255, .5);
+    transition: .2s;
 }
 
-@media screen and (max-width: 640px) {
-    .help-content h1 {
-        font-size: 3rem;
+/*@media screen and (max-width: 640px) {*/
+/*    .help-content h1 {*/
+/*        font-size: 3rem;*/
+/*    }*/
+
+/*    .help--content p {*/
+/*        font-size: 1.4rem;*/
+/*        margin-bottom: 1.6rem;*/
+/*    }*/
+/*}*/
+
+@media screen and (max-width: 1240px) {
+    .help-title h1 {
+        font-size: 3.2rem !important;
+        transition: .3s;
     }
 
-    .help--content p {
-        font-size: 1.4rem;
-        margin-bottom: 1.6rem;
+    .help-container p {
+        font-size: 1.3rem;
+        transition: .2s;
     }
 }
-
