@@ -8,8 +8,8 @@ export default function TodoItem(props) {
         <div className={todo.completed ? "todo-row complete" : "todo-row"}>
             {todo.text}
             <div className="iconsContainer">
-                <RiCheckLine onClick={() => completeTodo(todo.id)}/>
-                <RiDeleteBin7Line style={{ marginRight: 5 }} onClick={() => removeTodo(todo.id)}/>
+                <RiCheckLine className="icon" onClick={() => completeTodo(todo.id)}/>
+                <RiDeleteBin7Line className="icon" style={{ marginRight: 5 }} onClick={() => removeTodo(todo.id)}/>
             </div>
         </div>
     )

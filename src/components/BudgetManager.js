@@ -90,7 +90,18 @@ const BudgetManager = () => {
                     },
                     title: "Expense name or cost missing!"
                 });
-        } else {
+        }
+        else if (isNaN(price)) {
+            Swal.fire(
+                {customClass:{
+                        popup: 'reset-container-ok',
+                        title: 'reset-title-ok',
+                        confirmButton: 'reset-ok'
+                    },
+                    title: "Price must be a number!"
+                });
+        }
+        else {
             const newExpenses = [...expenses, newExpense];
             setExpenses(newExpenses);
         }
@@ -181,7 +192,7 @@ const BudgetManager = () => {
 
             <div className="budget-cont">
 
-                <div className="row-mt3">
+                <div className="row-mt3 f">
                     <div className="this-month">
                         <h3 className="mt-3">This month</h3>
                         <div className="col-m">
@@ -197,7 +208,7 @@ const BudgetManager = () => {
                 </div>
 
 
-                <div className="row-mt3">
+                <div className="row-mt3 s">
                     <div className="exp-list">
                         <h3 className="mt-3">Expenses</h3>
                         <div className="col-sm">
@@ -210,7 +221,7 @@ const BudgetManager = () => {
                 </div>
 
 
-                <div className="row-mt3">
+                <div className="row-mt3 t">
                     <div className="add-exp">
                         <h3 className="mt-3">Add Expense</h3>
                         <div className="col-sm">
@@ -224,7 +235,7 @@ const BudgetManager = () => {
             <br/>
             <div className="chart-cont">
                 <div className="left-chart">
-                    <div className="chart-cont">
+                    <div className="chart-graph d">
                         <Doughnut
                             data={doghnutData}
                             options={options}
@@ -232,7 +243,7 @@ const BudgetManager = () => {
                     </div>
                 </div>
                 <div className="right-chart">
-                    <div className="chart-cont">
+                    <div className="chart-graph l">
                             <Line
                                 data={lineChartData}
                                 options={options}

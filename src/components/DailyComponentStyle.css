@@ -31,6 +31,7 @@
 .daily-container .daily-content h1 {
     font-size: 4rem;
     color: #000;
+    transition: .3s;
 }
 
 .daily-container p {
@@ -39,13 +40,21 @@
     color: #000;
 }
 
-@media screen and (max-width: 640px) {
-    .daily-content h1 {
-        font-size: 3rem;
+/*@media screen and (max-width: 640px) {*/
+/*    .daily-content h1 {*/
+/*        font-size: 3rem;*/
+/*    }*/
+
+/*    .daily-content p {*/
+/*        font-size: 1.4rem;*/
+/*        margin-bottom: 1.6rem;*/
+/*    }*/
+/*}*/
+
+@media screen and (max-width: 1240px) {
+    .daily-title h1 {
+        font-size: 3.2rem !important;
+        transition: .3s;
     }
 
-    .daily-content p {
-        font-size: 1.4rem;
-        margin-bottom: 1.6rem;
-    }
 }

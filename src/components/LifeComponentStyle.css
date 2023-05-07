@@ -44,21 +44,28 @@
     margin-bottom: 1rem;
 }
 
-@media screen and (max-width: 640px) {
-    .life-content h1 {
-        font-size: 3rem;
+/*@media screen and (max-width: 640px) {*/
+/*    .life-content h1 {*/
+/*        font-size: 3rem;*/
+/*    }*/
+
+/*    .life-content p {*/
+/*        font-size: 1.4rem;*/
+/*        margin-bottom: 1.6rem;*/
+/*    }*/
+/*}*/
+
+/*@media screen and (max-width: 640px) {*/
+
+/*}*/
+
+@media screen and (max-width: 1240px) {
+    .life-title h1 {
+        font-size: 3.2rem !important;
+        transition: .3s;
     }
 
-    .life-content p {
-        font-size: 1.4rem;
-        margin-bottom: 1.6rem;
-    }
 }
-
-@media screen and (max-width: 640px) {
-
-}
-
 
 /*LOGIN ALERT STYLING*/
 .reset-title, .remove-title {

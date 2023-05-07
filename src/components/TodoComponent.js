@@ -116,11 +116,14 @@ function TodoComponent() {
                             addTodo={addTodo}
                         />
 
-                        {sortedTodos.map((todo) => {
-                            return (
-                                <TodoItem removeTodo={removeTodo} completeTodo={completeTodo} todo={todo} key={todo.id}/>
-                            )
-                        })}
+                        <div className="sorted">
+                            {sortedTodos.map((todo) => {
+                                return (
+                                    <TodoItem removeTodo={removeTodo} completeTodo={completeTodo} todo={todo} key={todo.id}/>
+                                )
+                            })}
+                        </div>
+
                     </div>
                 </div>
                 <div className="right-content"><CalendarComponent></CalendarComponent></div>
