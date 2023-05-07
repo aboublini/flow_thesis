@@ -47,6 +47,7 @@
 
 @media screen and (max-width: 1240px) {
     .hamburger {
+        transition: .3s;
         display: block;
     }
 
@@ -76,6 +77,7 @@
     }
 
     .nav-menu li:hover {
+        transition: .3s;
         border-bottom: none;
         background: rgba(192, 190, 179, .6);
         cursor: pointer;
@@ -143,6 +145,7 @@
 }
 
 .dropdown:hover .dropdown-content {
+    transition: .3s;
     display: block;
 }
 
