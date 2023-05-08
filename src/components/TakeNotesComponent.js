@@ -83,39 +83,58 @@ const TakeNotesComponent = () => {
     // Initial state for font family
     const fontFamily = useState("Raleway");
 
-    const changeFont = (currentFont) => {
+    const changeFont = (current) => {
+        // Confirm on note deletion
         Swal.fire({
-            title: 'Choose font-family:',
-            input: 'select',
-            inputOptions: {
-                'Fonts': {
-                    apples: 'Arial Black',
-                    bananas: 'Raleway',
-                    grapes: 'Comic Sans',
-                    oranges: 'Arial Nova'
-                },
+            customClass: {
+                popup: 'remove-container',
+                title: 'remove-title',
+                confirmButton: 'remove-confirm',
+                cancelButton: 'remove-cancel',
             },
-
-            inputPlaceholder: currentFont,
+            inputOptions: {
+                'Fruits': {
+                    raleway: 'Raleway',
+                    arial: 'Arial Black',
+                    flower: 'Inide Flower'
+                }
+            },
+            title: 'Select a font family',
+            input: 'select',
             showCancelButton: true,
-
-            // inputValidator: (value) => {
-            //     return new Promise((resolve) => {
-            //         if (value === 'oranges') {
-            //             resolve()
-            //         } else {
-            //             resolve('You need to select oranges :)')
-            //         }
-            //     })
-            // }
+            confirmButtonText: 'Yes',
+            cancelButtonText: 'No',
+            showLoaderOnConfirm: true}
+        ).then((result) => {
+            if (result.isConfirmed) {
+                let savedText = document.querySelector('.saved-txt');
+                let txtArea = document.querySelector('.txt-area');
+                let font = result.value.toString();
+                if (font === "raleway"){
+                    alert("You chose raleway!");
+                } else if (font === "arial") {
+                    // alert("You chose arial black!");
+                    savedText.style.fontFamily = 'Arial, sans-serif';
+                    txtArea.style.fontFamily = 'Arial, sans-serif';
+                } else if (font === "flower") {
+                    alert("You chose indie flower!");
+                }
+            }
         });
+
     }
+
+
+    // let savedText = document.querySelector('.saved-txt');
+    // let txtArea = document.querySelector('.txt-area');
+    // savedText.style.fontFamily = 'Arial, sans-serif';
+    // txtArea.style.fontFamily = 'Arial, sans-serif';
 
     return (
         <div className="out">
             <br/><br/><br/><br/>
             <div className="tn-container">
-                <p onClick={changeFont(fontFamily)}>Font Family : {fontFamily}</p>
+                <p onClick={changeFont}>Font Family : {fontFamily}</p>
                 <NotesList
                     notes={notes}
                     handleAddNote={addNote}
