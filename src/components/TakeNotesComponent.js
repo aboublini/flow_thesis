@@ -80,10 +80,42 @@ const TakeNotesComponent = () => {
 
     }
 
+    // Initial state for font family
+    const fontFamily = useState("Raleway");
+
+    const changeFont = (currentFont) => {
+        Swal.fire({
+            title: 'Choose font-family:',
+            input: 'select',
+            inputOptions: {
+                'Fonts': {
+                    apples: 'Arial Black',
+                    bananas: 'Raleway',
+                    grapes: 'Comic Sans',
+                    oranges: 'Arial Nova'
+                },
+            },
+
+            inputPlaceholder: currentFont,
+            showCancelButton: true,
+
+            // inputValidator: (value) => {
+            //     return new Promise((resolve) => {
+            //         if (value === 'oranges') {
+            //             resolve()
+            //         } else {
+            //             resolve('You need to select oranges :)')
+            //         }
+            //     })
+            // }
+        });
+    }
+
     return (
         <div className="out">
             <br/><br/><br/><br/>
             <div className="tn-container">
+                <p onClick={changeFont(fontFamily)}>Font Family : {fontFamily}</p>
                 <NotesList
                     notes={notes}
                     handleAddNote={addNote}
