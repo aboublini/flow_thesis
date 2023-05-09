@@ -57,8 +57,8 @@ h1 {
     max-width: 300px;
     margin-right: 1rem;
     padding: 0.4rem 1rem;
-    font-size: 1.3rem;
-    font-family: 'Indie Flower', serif !important;
+    font-size: 1.2rem;
+    font-family: 'Raleway', serif !important;
     background-color: #fff;
     border: none;
     outline: none;
@@ -80,8 +80,8 @@ h1 {
 }
 
 .todo-row{
-    font-family: 'Indie Flower', serif !important;
-    font-size: 1.3em;
+    font-family: 'Raleway', serif !important;
+    font-size: 1.2em;
 }
 
 .todo-container {
@@ -100,7 +100,7 @@ h1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 4px auto;
+    margin: 0.7rem auto;
     padding: 2px;
     border-radius: 5px;
     width: 100%;
