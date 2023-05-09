@@ -32,6 +32,20 @@ const TakeNotesComponent = () => {
         if (savedNotes){
             setNotes(savedNotes);
         }
+
+        const fontClass = localStorage.getItem("fontClass");
+        if (fontClass === "font-nirmala") {
+            setFontClass("font-nirmala");
+            setFontName("Nirmala UI");
+        }
+        else if (fontClass === "font-flower") {
+            setFontClass("font-flower");
+            setFontName("Indie Flower");
+        }
+        else {
+            setFontClass("");
+            setFontName("Raleway");
+        }
     },[])
 
     // Save notes to local storage
@@ -80,10 +94,10 @@ const TakeNotesComponent = () => {
 
     }
 
-    // Initial state for font family
-    const fontFamily = useState("Raleway");
+    let [fontClass, setFontClass] = useState("");
+    let [fontName, setFontName] = useState("Raleway");
 
-    const changeFont = (current) => {
+    const changeFont = () => {
         // Confirm on note deletion
         Swal.fire({
             customClass: {
@@ -93,10 +107,10 @@ const TakeNotesComponent = () => {
                 cancelButton: 'remove-cancel',
             },
             inputOptions: {
-                'Fruits': {
+                'Font Families': {
                     raleway: 'Raleway',
-                    arial: 'Arial Black',
-                    flower: 'Inide Flower'
+                    nirmala: 'Nirmala UI',
+                    flower: 'Indie Flower'
                 }
             },
             title: 'Select a font family',
@@ -107,38 +121,36 @@ const TakeNotesComponent = () => {
             showLoaderOnConfirm: true}
         ).then((result) => {
             if (result.isConfirmed) {
-                let savedText = document.querySelector('.saved-txt');
-                let txtArea = document.querySelector('.txt-area');
-                let font = result.value.toString();
-                if (font === "raleway"){
-                    alert("You chose raleway!");
-                } else if (font === "arial") {
-                    // alert("You chose arial black!");
-                    savedText.style.fontFamily = 'Arial, sans-serif';
-                    txtArea.style.fontFamily = 'Arial, sans-serif';
-                } else if (font === "flower") {
-                    alert("You chose indie flower!");
+                if (result.value.toString() === "raleway") {
+                    setFontClass("");
+                    setFontName("Raleway");
+                    localStorage.setItem("fontClass", "");
                 }
+                else if (result.value.toString() === "nirmala") {
+                    setFontClass("font-nirmala");
+                    setFontName("Nirmala UI");
+                    localStorage.setItem("fontClass", "font-nirmala");
+                }
+                else if (result.value.toString() === "flower") {
+                    setFontClass("font-flower");
+                    setFontName("Indie Flower");
+                    localStorage.setItem("fontClass", "font-flower");
+                }
+                // localStorage.setItem("font-fam", fontClass);
             }
         });
-
     }
-
-
-    // let savedText = document.querySelector('.saved-txt');
-    // let txtArea = document.querySelector('.txt-area');
-    // savedText.style.fontFamily = 'Arial, sans-serif';
-    // txtArea.style.fontFamily = 'Arial, sans-serif';
 
     return (
         <div className="out">
             <br/><br/><br/><br/>
             <div className="tn-container">
-                <p onClick={changeFont}>Font Family : {fontFamily}</p>
+                <p onClick={changeFont}>Font Family : {fontName}</p>
                 <NotesList
                     notes={notes}
                     handleAddNote={addNote}
                     handleDeleteNote={deleteNote}
+                    fontClass={fontClass}
                 />
             </div>
             <br/><br/>

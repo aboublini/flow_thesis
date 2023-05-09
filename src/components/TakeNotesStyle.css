@@ -55,6 +55,14 @@
     font-size: 1.3rem;
 }
 
+.font-flower {
+    font-family: 'Indie Flower', serif !important;;
+}
+
+.font-nirmala {
+    font-family: "Nirmala UI Semilight", serif !important;
+}
+
 .txt-area:focus{
     outline: none;
 }

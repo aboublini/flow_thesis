@@ -2,10 +2,10 @@ import React from 'react';
 import { RiDeleteBin7Line } from "react-icons/ri"
 
 
-const Note = ({ id, text, date, handleDeleteNote }) => {
+const Note = ({ id, text, date, handleDeleteNote, fontClass }) => {
     return (
         <div className="note">
-            <span className="saved-txt">{text}</span>
+            <span className={"saved-txt " + fontClass}>{text}</span>
             <div className="note-footer">
                 <small>{date}</small>
                 <RiDeleteBin7Line
