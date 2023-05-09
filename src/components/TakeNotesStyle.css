@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap');
 
 .out {
     background: rgba(255, 255, 255, .8);
@@ -48,19 +49,39 @@
     margin-bottom: 0.2rem;
     padding: 0.4rem 0.8rem;
     font-size: 1.2rem;
+    height: 231px;
 }
 
 .saved-txt {
     /*font-family: 'Indie Flower', serif !important;*/
-    font-size: 1.3rem;
+    font-size: 1.1rem;
 }
 
 .font-flower {
-    font-family: 'Indie Flower', serif !important;;
+    font-family: 'Indie Flower', serif !important;
+    font-size: 1.3rem;
 }
 
 .font-nirmala {
-    font-family: "Nirmala UI Semilight", serif !important;
+    font-family: "Kalam", serif !important;
+    font-size: 1.1rem;
+}
+
+.settings-notes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 160px;
+    margin-bottom: 0.5rem;
+}
+
+.settings-notes:hover {
+    cursor: pointer;
+}
+
+.settings-notes p {
+    font-size: 1.2rem;
+    margin-top: 0 !important;
 }
 
 .txt-area:focus{

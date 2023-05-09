@@ -3,6 +3,7 @@ import NotesList from "./NotesList";
 import './TakeNotesStyle.css';
 import {nanoid} from "nanoid";
 import Swal from "sweetalert2";
+import {IoMdSettings} from "react-icons/io";
 
 const TakeNotesComponent = () => {
 
@@ -109,7 +110,7 @@ const TakeNotesComponent = () => {
             inputOptions: {
                 'Font Families': {
                     raleway: 'Raleway',
-                    nirmala: 'Nirmala UI',
+                    nirmala: 'Kalam',
                     flower: 'Indie Flower'
                 }
             },
@@ -128,7 +129,7 @@ const TakeNotesComponent = () => {
                 }
                 else if (result.value.toString() === "nirmala") {
                     setFontClass("font-nirmala");
-                    setFontName("Nirmala UI");
+                    setFontName("Kalam");
                     localStorage.setItem("fontClass", "font-nirmala");
                 }
                 else if (result.value.toString() === "flower") {
@@ -136,7 +137,6 @@ const TakeNotesComponent = () => {
                     setFontName("Indie Flower");
                     localStorage.setItem("fontClass", "font-flower");
                 }
-                // localStorage.setItem("font-fam", fontClass);
             }
         });
     }
@@ -145,7 +145,11 @@ const TakeNotesComponent = () => {
         <div className="out">
             <br/><br/><br/><br/>
             <div className="tn-container">
-                <p onClick={changeFont}>Font Family : {fontName}</p>
+                <div className="settings-notes" onClick={changeFont}>
+                    <IoMdSettings  className="set" size={26} style={{color: '#000', marginRight: '0.3rem', marginLeft: '0.2rem'}}/>
+                    <p >{fontName}</p>
+                </div>
+
                 <NotesList
                     notes={notes}
                     handleAddNote={addNote}
