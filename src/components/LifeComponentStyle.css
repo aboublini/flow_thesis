@@ -88,9 +88,25 @@
     margin-right: auto;
 }
 
+.font-input {
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+    font-family: 'Raleway', serif;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    color: #000;
+    max-width: 330px;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
 .reset-container,
 .remove-container {
-    background: rgba(255, 255, 255, .8);
+    background: rgba(255, 255, 255, .9);
     border-radius: 20px;
     max-width: 400px;
     padding-top: 1rem;
@@ -121,7 +137,7 @@
 }
 
 .reset-container-ok {
-    background: rgba(255, 255, 255, .8);
+    background: rgba(255, 255, 255, .9);
     border-radius: 20px;
     max-width: 400px;
     padding-top: 1rem;

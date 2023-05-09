@@ -3,7 +3,7 @@ import NotesList from "./NotesList";
 import './TakeNotesStyle.css';
 import {nanoid} from "nanoid";
 import Swal from "sweetalert2";
-import {IoMdSettings} from "react-icons/io";
+import {FaFont} from "react-icons/fa";
 
 const TakeNotesComponent = () => {
 
@@ -37,11 +37,11 @@ const TakeNotesComponent = () => {
         const fontClass = localStorage.getItem("fontClass");
         if (fontClass === "font-nirmala") {
             setFontClass("font-nirmala");
-            setFontName("Nirmala UI");
+            setFontName("Kalam");
         }
         else if (fontClass === "font-flower") {
             setFontClass("font-flower");
-            setFontName("Indie Flower");
+            setFontName("Flower");
         }
         else {
             setFontClass("");
@@ -106,6 +106,7 @@ const TakeNotesComponent = () => {
                 title: 'remove-title',
                 confirmButton: 'remove-confirm',
                 cancelButton: 'remove-cancel',
+                input: 'font-input',
             },
             inputOptions: {
                 'Font Families': {
@@ -134,7 +135,7 @@ const TakeNotesComponent = () => {
                 }
                 else if (result.value.toString() === "flower") {
                     setFontClass("font-flower");
-                    setFontName("Indie Flower");
+                    setFontName("Flower");
                     localStorage.setItem("fontClass", "font-flower");
                 }
             }
@@ -145,10 +146,10 @@ const TakeNotesComponent = () => {
         <div className="out">
             <br/><br/><br/><br/>
             <div className="tn-container">
-                <div className="settings-notes" onClick={changeFont}>
-                    <IoMdSettings  className="set" size={26} style={{color: '#000', marginRight: '0.3rem', marginLeft: '0.2rem'}}/>
+                <button className="settings-notes" onClick={changeFont}>
+                    <FaFont  className="set" size={17} style={{color: '#000', marginRight: '0.3rem', marginLeft: '0.2rem'}}/>
                     <p >{fontName}</p>
-                </div>
+                </button>
 
                 <NotesList
                     notes={notes}
