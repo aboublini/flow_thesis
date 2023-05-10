@@ -118,8 +118,8 @@ const TakeNotesComponent = () => {
             title: 'Select a font family',
             input: 'select',
             showCancelButton: true,
-            confirmButtonText: 'Yes',
-            cancelButtonText: 'No',
+            confirmButtonText: 'Save',
+            cancelButtonText: 'Cancel',
             showLoaderOnConfirm: true}
         ).then((result) => {
             if (result.isConfirmed) {
