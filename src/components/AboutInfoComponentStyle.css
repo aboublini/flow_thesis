@@ -7,15 +7,19 @@
 }
 
 .about .left {
-    text-align: center;
     margin: auto;
     padding: 3rem 4rem;
-    max-width: 600px;
+    max-width: 750px;
 }
 
 .about .left p {
     margin: 1.2rem 0;
     font-size: 1.1rem;
+    text-align: justify;
+}
+
+.about .left h1 {
+    text-align: center;
 }
 
 .about .right {

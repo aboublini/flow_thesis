@@ -9,12 +9,16 @@ const AboutInfoComponent = () => {
         <div className="about">
             <div className="left">
                 <h1>What is flow?</h1>
-                <p>I am currently studying Computer Science at the department of
-                    Informatics of University of Piraeus.
-                    I have taken classes relative to Web Development, AI,
-                    Design Patterns, UI/UX, Data Structures, Algorithms, Cryptography etc.
-                    My academic interests include web and desktop frontend technologies,
-                    cryptographic algorithms, cloud design patterns and Information Systems.
+                <p>
+                    Flow is an online application developed in React JS as part of my bachelor
+                    thesis titled "Gendered UI/UX: A Comparative Study of Gender-Specific and
+                    Gender-Neutral Web Design". As a productivity tool, flow is designed to
+                    help users streamline their daily routines and accomplish more in less time.
+                    The application includes features such as task and budget management, calendar
+                    integration, and note-taking, all of which are accessible through a
+                    user-friendly interface. For its implementation, I employed technologies
+                    such as React Hooks and FP Paradigm (Functional Programming), and utilized
+                    libraries like Material UI and SweetAlert2.
                 </p>
             </div>
             <div className="right">
@@ -26,12 +30,16 @@ const AboutInfoComponent = () => {
             </div>
             <div className="left">
                 <h1>Bachelor Thesis</h1>
-                <p>I am currently studying Computer Science at the department of
-                    Informatics of University of Piraeus.
-                    I have taken classes relative to Web Development, AI,
-                    Design Patterns, UI/UX, Data Structures, Algorithms, Cryptography etc.
-                    My academic interests include web and desktop frontend technologies,
-                    cryptographic algorithms, cloud design patterns and Information Systems.
+                <p>
+                    My bachelor thesis, entitled as "Gendered UI/UX: A Comparative Study
+                    of Gender-Specific and Gender-Neutral Web Design" is a research project
+                    that explores the impact of gender on UI/UX design. In particular,
+                    the study aims to compare gender-specific and gender-neutral web design
+                    and determine whether there are significant differences in how users
+                    interact with these different types of design. By conducting this
+                    comparative analysis, the research seeks to gain insights into how
+                    gender affects the user experience of web design and identify strategies
+                    for creating more inclusive and effective UI/UX design.
                 </p>
             </div>
             <div className="right">

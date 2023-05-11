@@ -13,11 +13,13 @@ const Footer = () => {
                 <div className="left">
                     <img src={Logo} className="footer-logo" alt=""/>
                     <div className="right">
-                        <p>Hi, my name is Anastasia, and welcome to flow.
-                            I am currently an undergraduate computer science
-                            student at the University of Piraeus and flow
-                            is a part of my diploma thesis with the title
-                            "Gender-related UI/UX". </p>
+                        <p>
+                            Hello, my name is Anastasia and I would like to introduce you to flow.
+                            I am an undergraduate computer science student at the University of
+                            Piraeus and Flow is a key component of my diploma thesis titled
+                            "Gendered UI/UX: A Comparative Study of Gender-Specific and
+                            Gender-Neutral Web Design".
+                        </p>
                         <br/><br/>
                         <div className="social">
                             <Link target="_blank" to={"//goo.gl/maps/B4wBubyEPW2Cc6vQ9"}>

@@ -81,7 +81,7 @@ const TakeNotesComponent = () => {
             title: 'Are you sure that you want to delete this note?',
             showCancelButton: true,
             confirmButtonText: 'Yes',
-            cancelButtonText: 'No',
+            cancelButtonText: 'Cancel',
             showLoaderOnConfirm: true}
         ).then((result) => {
             if (result.isConfirmed) {
