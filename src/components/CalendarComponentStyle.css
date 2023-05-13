@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
 * {
-    font-family: 'Raleway', 'Nirmala UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif !important;
+    font-family: 'Raleway', 'Manrope', sans-serif !important;
 }
 
 /* Hide buttons under the calendar */

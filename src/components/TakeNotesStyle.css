@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mynerve&display=swap');
 
 .out {
     background: rgba(255, 255, 255, .8);
@@ -58,13 +58,13 @@
 }
 
 .font-flower {
-    font-family: 'Indie Flower', serif !important;
+    font-family: 'Indie Flower', 'Manrope', serif !important;
     font-size: 1.3rem;
 }
 
 .font-nirmala {
-    font-family: "Kalam", serif !important;
-    font-size: 1.1rem;
+    font-family: "Mynerve", serif !important;
+    font-size: 1.2rem;
 }
 
 .settings-notes {

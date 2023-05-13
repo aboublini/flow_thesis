@@ -37,7 +37,7 @@ const TakeNotesComponent = () => {
         const fontClass = localStorage.getItem("fontClass");
         if (fontClass === "font-nirmala") {
             setFontClass("font-nirmala");
-            setFontName("Kalam");
+            setFontName("Mynerve");
         }
         else if (fontClass === "font-flower") {
             setFontClass("font-flower");
@@ -111,7 +111,7 @@ const TakeNotesComponent = () => {
             inputOptions: {
                 'Font Families': {
                     raleway: 'Raleway',
-                    nirmala: 'Kalam',
+                    nirmala: 'Mynerve',
                     flower: 'Indie Flower'
                 }
             },
@@ -130,7 +130,7 @@ const TakeNotesComponent = () => {
                 }
                 else if (result.value.toString() === "nirmala") {
                     setFontClass("font-nirmala");
-                    setFontName("Kalam");
+                    setFontName("Mynerve");
                     localStorage.setItem("fontClass", "font-nirmala");
                 }
                 else if (result.value.toString() === "flower") {

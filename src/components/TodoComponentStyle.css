@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap');
 
 .out {
     background: rgba(255, 255, 255, .8);
@@ -58,7 +60,7 @@ h1 {
     margin-right: 1rem;
     padding: 0.4rem 1rem;
     font-size: 1.2rem;
-    font-family: 'Raleway', serif !important;
+    font-family: 'Raleway', 'Manrope', serif !important;
     background-color: #fff;
     border: none;
     outline: none;
@@ -67,7 +69,7 @@ h1 {
 }
 
 .todo-button {
-    font-family: 'Raleway', 'Nirmala UI', 'Roboto', 'Oxygen',
+    font-family: 'Raleway', 'Manrope','Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
     padding: 3px 12px;
@@ -80,7 +82,7 @@ h1 {
 }
 
 .todo-row{
-    font-family: 'Raleway', serif !important;
+    font-family: 'Raleway', 'Manrope',  serif !important;
     font-size: 1.2em;
 }
 
