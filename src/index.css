@@ -13,9 +13,7 @@ h1, h4, p, a {
 
 body {
     margin: 0;
-    font-family: 'Raleway', 'Nirmala UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+    font-family: 'Raleway', 'Manrope', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 
@@ -36,9 +34,7 @@ code {
 }
 
 .btn {
-    font-family: 'Raleway', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+    font-family: 'Raleway', 'Manrope', sans-serif;
     padding: 12px 32px;
     font-size: 1.1em;
     background: rgba(255, 255, 255);

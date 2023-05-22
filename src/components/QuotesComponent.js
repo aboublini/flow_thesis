@@ -1,5 +1,5 @@
 import React from 'react';
-import './QuotesComponentStyle.css'
+import './QuotesComponentStyle.css';
 
 const QuotesComponent = () => {
     // Quotes that will be appearing

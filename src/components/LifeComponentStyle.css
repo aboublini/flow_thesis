@@ -44,21 +44,6 @@
     margin-bottom: 1rem;
 }
 
-/*@media screen and (max-width: 640px) {*/
-/*    .life-content h1 {*/
-/*        font-size: 3rem;*/
-/*    }*/
-
-/*    .life-content p {*/
-/*        font-size: 1.4rem;*/
-/*        margin-bottom: 1.6rem;*/
-/*    }*/
-/*}*/
-
-/*@media screen and (max-width: 640px) {*/
-
-/*}*/
-
 @media screen and (max-width: 1240px) {
     .life-title h1 {
         font-size: 3.2rem !important;
@@ -76,7 +61,7 @@
 .reset-input {
     padding: 0 1rem;
     font-size: 1.1rem;
-    font-family: 'Raleway', 'Nirmala UI', serif;
+    font-family: 'Raleway', 'Manrope', serif;
     background-color: #fff;
     border: none;
     outline: none;
@@ -91,7 +76,7 @@
 .font-input {
     padding: 0.5rem 1rem;
     font-size: 1.1rem;
-    font-family: 'Raleway', serif;
+    font-family: 'Raleway', 'Manrope', serif;
     background-color: #fff;
     border: none;
     outline: none;

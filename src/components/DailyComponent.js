@@ -6,10 +6,6 @@ const DailyComponent = () => {
     
     return (
         <div className="daily-container">
-            {/*<video autoPlay loop muted id="daily-video">*/}
-            {/*    <source src={dailyVideo} type="image/jpg"/>*/}
-            {/*</video>*/}
-
             <img src={dailyImage} id="daily-image" alt="daily-background"/>
 
             <div className="daily-content">

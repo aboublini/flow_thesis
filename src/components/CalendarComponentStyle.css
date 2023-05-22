@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
 * {
-    font-family: 'Raleway', 'Manrope', sans-serif !important;
+    font-family: 'Raleway', 'Manrope', serif !important;
 }
 
 /* Hide buttons under the calendar */

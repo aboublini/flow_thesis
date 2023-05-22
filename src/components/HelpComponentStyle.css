@@ -48,9 +48,7 @@
 }
 
 .btn-help {
-    font-family: 'Raleway', 'Nirmala UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+    font-family: 'Raleway', 'Manrope', sans-serif;
     padding: 12px 32px;
     font-size: 1.2em;
     background: rgba(255, 255, 255, .7);
@@ -67,16 +65,6 @@
     transition: .2s;
 }
 
-/*@media screen and (max-width: 640px) {*/
-/*    .help-content h1 {*/
-/*        font-size: 3rem;*/
-/*    }*/
-
-/*    .help--content p {*/
-/*        font-size: 1.4rem;*/
-/*        margin-bottom: 1.6rem;*/
-/*    }*/
-/*}*/
 
 @media screen and (max-width: 1240px) {
     .help-title h1 {

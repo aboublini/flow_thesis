@@ -69,9 +69,7 @@ h1 {
 }
 
 .todo-button {
-    font-family: 'Raleway', 'Manrope','Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+    font-family: 'Raleway', 'Manrope', sans-serif;
     padding: 3px 12px;
     font-size: 1.5em;
     background: #8F867E;

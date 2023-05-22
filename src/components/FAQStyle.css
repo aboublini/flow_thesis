@@ -80,9 +80,7 @@ ol {
 }
 
 .faqs-plus {
-    font-family: 'Raleway', 'Nirmala UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+    font-family: 'Raleway', 'Manrope', sans-serif;
     padding: 0.1px 8px;
     font-size: 1.3rem;
     background: #8F867E;
@@ -92,9 +90,7 @@ ol {
 }
 
 .faqs-btn {
-    font-family: 'Raleway', 'Nirmala UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+    font-family: 'Raleway','Manrope', sans-serif;
     padding: 1.9px 9px;
     font-size: 0.9rem;
     background-color: rgba(143, 134, 126, .9);

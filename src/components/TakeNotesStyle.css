@@ -46,7 +46,6 @@
     border: none;
     resize: none;
     background-color: rgba(255, 255, 255, .8) ;
-    /*font-family: 'Indie Flower', serif !important;*/
     margin-bottom: 0.2rem;
     padding: 0.4rem 0.8rem;
     font-size: 1.2rem;
@@ -54,7 +53,6 @@
 }
 
 .saved-txt {
-    /*font-family: 'Indie Flower', serif !important;*/
     font-size: 1.1rem;
 }
 
