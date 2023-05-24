@@ -3,7 +3,6 @@ import './HelpComponentStyle.css'
 import helpVideo from '../visual-material/HelpBackround.mp4';
 import manual from '../visual-material/UserManual.pdf';
 
-
 const HelpComponent = () => {
 
     return (
@@ -13,7 +12,7 @@ const HelpComponent = () => {
             </video>
             <div className="help-content">
                 <div className="help-title">
-                    <h1>Having trouble with flow?</h1>
+                    <h1>Having trouble with Flow?</h1>
                     <p>We've got you covered. Download our user manual.</p>
                     <br/><br/>
 

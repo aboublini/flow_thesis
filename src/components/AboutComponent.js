@@ -10,7 +10,7 @@ const AboutComponent = () => {
             </video>
             <div className="about-content">
                 <div className="about-title">
-                    <h1>About flow.</h1>
+                    <h1>About Flow.</h1>
                     <p>The idea behind productivity.</p>
                 </div>
             </div>

@@ -7,10 +7,10 @@ import {FaFont} from "react-icons/fa";
 function FAQ() {
     const data = [
         {
-            question: "What exactly is flow?",
-            answer: "You can think of flow as an all-in-one, productivity web app " +
+            question: "What exactly is Flow?",
+            answer: "You can think of Flow as an all-in-one, productivity web app " +
                 "that allows you to manage your personal life via its flexible tools. " +
-                "Whether you are currently studying or working, flow is here to take " +
+                "Whether you are currently studying or working, Flow is here to take " +
                 "your productivity to the next level. With a variety of features, " +
                 "such as creating to-do lists, managing money, taking notes etc., " +
                 "you can organize information and keep track of everything that " +

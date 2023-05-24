@@ -8,7 +8,7 @@ const AboutInfoComponent = () => {
     return (
         <div className="about">
             <div className="left">
-                <h1>What is flow?</h1>
+                <h1>What is Flow?</h1>
                 <p>
                     Flow is an online application developed in React JS as part of my bachelor
                     thesis titled "Gendered UI/UX: A Comparative Study of Gender-Specific and
@@ -31,7 +31,7 @@ const AboutInfoComponent = () => {
             <div className="left">
                 <h1>Bachelor Thesis</h1>
                 <p>
-                    My bachelor thesis, entitled as "Gendered UI/UX: A Comparative Study
+                    My bachelor thesis, entitled "Gendered UI/UX: A Comparative Study
                     of Gender-Specific and Gender-Neutral Web Design" is a research project
                     that explores the impact of gender on UI/UX design. In particular,
                     the study aims to compare gender-specific and gender-neutral web design

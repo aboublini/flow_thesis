@@ -14,7 +14,7 @@ const Footer = () => {
                     <img src={Logo} className="footer-logo" alt=""/>
                     <div className="right">
                         <p>
-                            Hello, my name is Anastasia and I would like to introduce you to flow.
+                            Hello, my name is Anastasia and I would like to introduce you to Flow.
                             I am an undergraduate computer science student at the University of
                             Piraeus and Flow is a key component of my diploma thesis titled
                             "Gendered UI/UX: A Comparative Study of Gender-Specific and
