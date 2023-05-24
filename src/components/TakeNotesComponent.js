@@ -41,7 +41,7 @@ const TakeNotesComponent = () => {
         }
         else if (fontClass === "font-flower") {
             setFontClass("font-flower");
-            setFontName("Indie Flower");
+            setFontName("Plus Jakarta Sans");
         }
         else {
             setFontClass("");
@@ -112,7 +112,7 @@ const TakeNotesComponent = () => {
                 'Font Families': {
                     raleway: 'Raleway',
                     nirmala: 'Manrope',
-                    flower: 'Indie Flower'
+                    flower: 'Plus Jakarta Sans'
                 }
             },
             title: 'Select a font family',
@@ -135,7 +135,7 @@ const TakeNotesComponent = () => {
                 }
                 else if (result.value.toString() === "flower") {
                     setFontClass("font-flower");
-                    setFontName("Indie Flower");
+                    setFontName("Plus Jakarta Sans");
                     localStorage.setItem("fontClass", "font-flower");
                 }
             }

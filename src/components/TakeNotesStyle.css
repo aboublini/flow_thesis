@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Mynerve&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mansalva&display=swap');
 
 .out {
@@ -57,8 +56,8 @@
 }
 
 .font-flower {
-    font-family: 'Indie Flower', 'Mynerve', serif !important;
-    font-size: 1.3rem;
+    font-family: 'Plus Jakarta Sans', 'Manrope', serif !important;
+    font-size: 1.1rem;
 }
 
 .font-nirmala {
@@ -76,6 +75,7 @@
     border: none;
     cursor: pointer;
     background-color: transparent;
+    padding-right: 0.2rem;
 }
 
 .settings-notes:hover {
