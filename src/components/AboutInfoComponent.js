@@ -12,7 +12,7 @@ const AboutInfoComponent = () => {
                 <p>
                     Flow is an online application developed in React JS as part of my bachelor
                     thesis titled "Gendered UI/UX: A Comparative Study of Gender-Specific and
-                    Gender-Neutral Web Design". As a productivity tool, flow is designed to
+                    Gender-Neutral Web Design". As a productivity tool, Flow is designed to
                     help users streamline their daily routines and accomplish more in less time.
                     The application includes features such as task and budget management, calendar
                     integration, and note-taking, all of which are accessible through a
