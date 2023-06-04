@@ -52,6 +52,11 @@ const BudgetManager = () => {
             name: "Fay's present",
             cost: "50"
         },
+        {
+            id: nanoid(),
+            name: "Rent",
+            cost: "950"
+        },
     ]);
 
     // Retrieve expenses when page loads

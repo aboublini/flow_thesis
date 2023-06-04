@@ -13,12 +13,24 @@ function TodoComponent() {
         {
             id: nanoid(),
             text: "Buy groceries",
-            completed: false,
+            completed: true,
             important: false
         },
         {
             id: nanoid(),
             text: "Go to gym",
+            completed: true,
+            important: false
+        },
+        {
+            id: nanoid(),
+            text: "Yoga class",
+            completed: false,
+            important: false
+        },
+        {
+            id: nanoid(),
+            text: "Dinner with George",
             completed: false,
             important: false
         },

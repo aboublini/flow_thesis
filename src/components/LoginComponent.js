@@ -29,7 +29,7 @@ const LoginComponent = () => {
     // Handle login with credentials
     const handleLogin = e => {
         e.preventDefault();
-        if (username === "aboublini" && password === "123") {
+        if (username === "user" && password === "thesis2023") {
             setUsername('');
             setPassword('');
             navigate("/home");
