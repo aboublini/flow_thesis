@@ -54,95 +54,95 @@
 
 /*LOGIN ALERT STYLING*/
 .reset-title, .remove-title {
-    font-size: 1.1rem;
-    font-weight: lighter;
+    font-size: 1.1rem !important;
+    font-weight: lighter !important;
 }
 
 .reset-input {
-    padding: 0 1rem;
-    font-size: 1.1rem;
-    font-family: 'Raleway', 'Manrope', serif;
-    background-color: #fff;
-    border: none;
-    outline: none;
-    border-radius: 25px;
-    color: #000;
-    max-width: 330px;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+    padding: 0 1rem !important;
+    font-size: 1.1rem !important;
+    font-family: 'Raleway', 'Manrope', serif !important;
+    background-color: #fff !important;
+    border: none !important;
+    outline: none !important;
+    border-radius: 25px !important;
+    color: #000 !important;
+    max-width: 330px !important;
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
 }
 
 .font-input {
-    padding: 0.5rem 1rem;
-    font-size: 1.1rem;
-    font-family: 'Raleway', 'Manrope', serif;
-    background-color: #fff;
-    border: none;
-    outline: none;
-    border-radius: 25px;
-    color: #000;
-    max-width: 330px;
-    text-align: left;
-    margin-left: auto;
-    margin-right: auto;
+    padding: 0.5rem 1rem !important;
+    font-size: 1.1rem !important;
+    font-family: 'Raleway', 'Manrope', serif !important;
+    background-color: #fff !important;
+    border: none !important;
+    outline: none !important;
+    border-radius: 25px !important;
+    color: #000 !important;
+    max-width: 330px !important;
+    text-align: left !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
 }
 
 
 .reset-container,
 .remove-container {
-    background: rgba(255, 255, 255, .9);
-    border-radius: 20px;
-    max-width: 400px;
-    padding-top: 1rem;
-    padding-bottom: 2rem;
+    background: rgba(255, 255, 255, .9) !important;
+    border-radius: 20px !important;
+    max-width: 400px !important;
+    padding-top: 1rem !important;
+    padding-bottom: 2rem !important;
 }
 
 .reset-container .reset-confirm,
 .remove-container .remove-confirm{
-    background-color: rgba(143, 134, 126, .9);
-    border-radius: 20px;
-    width: 90px;
+    background-color: rgba(143, 134, 126, .9) !important;
+    border-radius: 20px !important;
+    width: 90px !important;
 }
 
 .reset-container .reset-confirm:hover,
 .remove-container .remove-confirm:hover {
-    background-color: rgba(143, 134, 126, .5);
+    background-color: rgba(143, 134, 126, .5) !important;
 }
 
 .reset-container .reset-cancel, .remove-container .remove-cancel{
-    background-color: rgba(143, 134, 126, .9);
-    border-radius: 20px;
-    width: 90px;
+    background-color: rgba(143, 134, 126, .9) !important;
+    border-radius: 20px !important;
+    width: 90px !important;
 }
 
 .reset-container .reset-cancel:hover,
 .remove-container .remove-cancel:hover {
-    background-color: rgba(143, 134, 126, .5);
+    background-color: rgba(143, 134, 126, .5) !important;
 }
 
 .reset-container-ok {
-    background: rgba(255, 255, 255, .9);
-    border-radius: 20px;
-    max-width: 400px;
-    padding-top: 1rem;
-    padding-bottom: 2rem;
+    background: rgba(255, 255, 255, .9) !important;
+    border-radius: 20px !important;
+    max-width: 400px !important;
+    padding-top: 1rem !important;
+    padding-bottom: 2rem !important;
 }
 
 .reset-title-ok {
-    font-size: 1.1rem;
-    font-weight: lighter;
+    font-size: 1.1rem !important;
+    font-weight: lighter !important;
 }
 
 .reset-container-ok .reset-ok {
-    background-color: rgba(143, 134, 126, .9);
-    border-radius: 20px;
-    width: 90px;
+    background-color: rgba(143, 134, 126, .9) !important;
+    border-radius: 20px !important;
+    width: 90px !important;
 }
 
 .remove-title {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
+    width: 80% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
 }
 

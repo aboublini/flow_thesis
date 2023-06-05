@@ -4,12 +4,14 @@
 }
 
 /* Hide buttons under the calendar */
-.css-hlj6pa-MuiDialogActions-root {
+.css-hlj6pa-MuiDialogActions-root,
+.css-14b29qc {
     display: none !important;
 }
 
 /* Hide pencil button next to date title */
-.css-z3au5x-MuiButtonBase-root-MuiIconButton-root-MuiPickersToolbar-penIconButton {
+.css-z3au5x-MuiButtonBase-root-MuiIconButton-root-MuiPickersToolbar-penIconButton,
+.css-1beylcr {
     display: none !important;
 }
 
@@ -19,63 +21,75 @@
 }
 
 /* Hide down arrow button next to month */
-.css-12mkn7b-MuiButtonBase-root-MuiIconButton-root-MuiPickersCalendarHeader-switchViewButton {
+.css-12mkn7b-MuiButtonBase-root-MuiIconButton-root-MuiPickersCalendarHeader-switchViewButton,
+.css-1wjkg3 {
     display: none !important;
 }
 
 /* Month name and year*/
-.css-10fao8b-MuiPickersCalendarHeader-labelContainer {
+.css-10fao8b-MuiPickersCalendarHeader-labelContainer,
+.css-l0iinn {
     pointer-events: none !important;
 }
 
 /* Remove select date title above date */
-.css-1hbyad5-MuiTypography-root {
+.css-1hbyad5-MuiTypography-root,
+.css-1bzq5ag {
     display: none !important;
 }
 
 /* Date title font size */
-.css-3jvy96-MuiTypography-root-MuiDatePickerToolbar-title {
+.css-3jvy96-MuiTypography-root-MuiDatePickerToolbar-title,
+.css-k3zp98 {
     font-size: 2.5rem !important;
 }
 
 /* Month title styling */
-.css-dplwbx-MuiPickersCalendarHeader-label {
+.css-dplwbx-MuiPickersCalendarHeader-label,
+.css-1v994a0 {
     font-size: 1.5rem !important;
     margin-bottom: 2px !important;
 }
 
 /* Initials of week days M, T, ... F, S */
-.css-raiqh1-MuiTypography-root-MuiDayPicker-weekDayLabel{
+.css-raiqh1-MuiTypography-root-MuiDayPicker-weekDayLabel,
+.css-10qkmc3 {
     font-size: 1rem !important;
 }
 
-.css-ghi3gg-MuiDayPicker-weekContainer {
+.css-ghi3gg-MuiDayPicker-weekContainer,
+.css-mvmu1r {
     margin: 2px 0 !important;
 }
 
 /* Month number circles styling */
-.css-bkrceb-MuiButtonBase-root-MuiPickersDay-root {
+.css-bkrceb-MuiButtonBase-root-MuiPickersDay-root,
+.css-ub1r1 {
     margin: 3px 3px !important;
     font-size: 1rem !important;
 }
 
 /* Calendar background color */
-.css-xelq0e-MuiPickerStaticWrapper-content{
+.css-xelq0e-MuiPickerStaticWrapper-content,
+.css-4l7j15 {
     background-color: transparent !important;
 }
 
 /* Selected day styling */
-.css-195y93z-MuiButtonBase-root-MuiPickersDay-root.Mui-selected {
+.css-195y93z-MuiButtonBase-root-MuiPickersDay-root.Mui-selected,
+.css-wed0tz.Mui-selected {
     background-color: #8F867E !important;
     color: white !important;
 }
 
 /* Border color of selected day circle */
-.css-195y93z-MuiButtonBase-root-MuiPickersDay-root:not(.Mui-selected) {
+.css-195y93z-MuiButtonBase-root-MuiPickersDay-root:not(.Mui-selected),
+.css-wed0tz:not(.Mui-selected) {
     border-color: #8F867E !important;
 }
 
 /* Other days circles color when they are being clicked */
-.css-bkrceb-MuiButtonBase-root-MuiPickersDay-root.Mui-selected {
+.css-bkrceb-MuiButtonBase-root-MuiPickersDay-root.Mui-selected,
+.css-ub1r1.Mui-selected {
     background-color: #8F867E !important;
 }
