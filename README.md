@@ -1,70 +1,38 @@
-# Getting Started with Create React App
+# 💻 About the project
+<p align="justify">
+    This repository is part of my bachelor’s thesis entitled "<b>Gendered UI/UX: A Comparative Study of Gender-Specific and Gender-Neutral Web Design</b>”
+    and contains one of the three versions (the female version) of the productivity app wherewith survey participants had to interact, in order to complete the questionnaires.
+</p> 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# 🎓 Thesis - About the survey
+<p align="justify">
+  My thesis is a research project that explores the impact of gender on users’ UI/UX design preferences. The topic is approached through
+  a comparative study, which led to the conclusion that gender, as a demographic characteristic, does indeed have an influence on the user’s 
+  overall perception and preferences, regarding the design of a digital product. The study was conducted through a questionnaire survey and the
+  respondents who participated in it, consisted of 122 women and 106 men in Greece. <br/>
+  At first, participants had to interact with three versions (male, female, and neutral) of a productivity app that I developed in React JS 
+  and then answer the questionnaires, expressing their personal opinion on the design aspect of each version. Then, the data were analyzed in a 
+  Jupyter notebook using Python and utilizing various data analytic libraries and statistical analysis methods, such as Welch’s t-test
+  and Pearson’s chi-square test.
+</p>
 
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# ⬇️ How to run this app
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). In order to set up the project in your workspace please follow the steps below:
+1. Clone this project using:
+    ### `git clone {the url to the GitHub repo}`
+###
+2. Go to the project folder and install the required dependencies using:
+   ### `npm install`
+###
+3. Run the project using:
+   ### `npm start`
+###
+4. View the app in:
+    ### `http://localhost:3000/`
+###
+###
+##
+<b>Student Information: </b>
+Anastasia Boublini (P19117), Department of Informatics, University of Piraeus 
+<br/>
+<b>Academic Year:</b> 2023 - 2024
