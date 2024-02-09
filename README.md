@@ -3,6 +3,7 @@
     This repository is part of my bachelor’s thesis entitled "<b>Gendered UI/UX: A Comparative Study of Gender-Specific and Gender-Neutral Web Design</b>”
     and contains one of the three versions (the female version) of the productivity app wherewith survey participants had to interact, in order to complete the questionnaires.
 </p> 
+Live runtime demo <a href="https://www.youtube.com/watch?v=uZKSX_zsHvY">here</a>.
 
 # 🎓 Thesis - About the survey
 <p align="justify">
