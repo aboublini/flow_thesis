@@ -12,7 +12,7 @@ Live runtime demo <a href="https://www.youtube.com/watch?v=uZKSX_zsHvY">here</a>
   overall perception and preferences, regarding the design of a digital product. The study was conducted through a questionnaire survey and the
   respondents who participated in it, consisted of 122 women and 106 men in Greece. <br/>
   At first, participants had to interact with three versions (male, female, and neutral) of a productivity app that I developed in React JS 
-  and then answer the questionnaires, expressing their personal opinion on the design aspect of each version. Then, the data were analyzed in a 
+  and then answer the questionnaires, expressing their personal opinion on the design aspect of each version. Then, the data was analyzed in a 
   Jupyter notebook using Python and utilizing various data analytic libraries and statistical analysis methods, such as Welch’s t-test
   and Pearson’s chi-square test.
 </p>
